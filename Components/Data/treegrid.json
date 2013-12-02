@@ -1,0 +1,167 @@
+﻿{"text":".","children": [
+    {
+        name:'Project: Shopping',
+        completed:13.25,
+        assignedTo:'Garg',
+        nodeType:'folder',
+        expanded: true,
+        children:[{
+            name:'Housewares',
+            completed:1.25,
+            assignedTo:'Goyal',
+            nodeType:'folder',
+            children:[{
+                name:'Kitchen supplies',
+                completed:0.25,
+                assignedTo:'Indori',
+                leaf:true,
+                nodeType:'requirements'
+            },{
+                name:'Groceries',
+                completed:.4,
+                assignedTo:'Kalcuttai',
+                leaf:true,
+                nodeType:'requirements'
+            },{
+                name:'Cleaning supplies',
+                completed:.4,
+                assignedTo:'Khanne',
+                leaf:true,
+                nodeType:'requirements'
+            },{
+                name: 'Office supplies',
+                completed: .2,
+                assignedTo: 'Panku',
+                leaf: true,
+                nodeType:'requirements'
+            }]
+        }, {
+            name:'Remodeling',
+            completed:12,
+            assignedTo:'Pihu',
+            nodeType:'folder',
+            expanded: true,
+            children:[{
+                name:'Retile kitchen',
+                completed:6.5,
+                assignedTo:'Saanjh',
+                leaf:true,
+                nodeType:'requirements'
+            },{
+                name:'Paint bedroom',
+                completed: 2.75,
+                assignedTo:'Anaya',
+                nodeType:'folder',
+                children: [{
+                    name: 'Ceiling',
+                    completed: 1.25,
+                    assignedTo: 'Yaaden',
+                    nodeType:'requirements',
+                    leaf: true
+                }, {
+                    name: 'Walls',
+                    completed: 1.5,
+                    assignedTo: 'Mushkan',
+                    nodeType:'requirements',
+                    leaf: true
+                }]
+            },{
+                name:'Decorate living room',
+                completed:2.75,
+                assignedTo:'Siya',
+                leaf:true,
+                nodeType:'requirements'
+            },{
+                name: 'Fix lights',
+                completed: .75,
+                assignedTo: 'Ziya',
+                leaf: true,
+                nodeType:'requirements'
+            }, {
+                name: 'Reattach screen door',
+                completed: 2,
+                assignedTo: 'Tiya',
+                leaf: true,
+                nodeType:'requirements'
+            }]
+        }]
+    },{
+        name:'Project: Testing',
+        completed:2,
+        assignedTo:'Core Team',
+        nodeType:'folder',
+        children:[{
+            name: 'Mac OSX',
+            completed: 0.75,
+            assignedTo: 'Santosh',
+            nodeType:'folder',
+            children: [{
+                name: 'FireFox',
+                completed: 0.25,
+                assignedTo: 'Santosh',
+                nodeType:'requirements',
+                leaf: true
+            }, {
+                name: 'Safari',
+                completed: 0.25,
+                assignedTo: 'Tez',
+                nodeType:'requirements',
+                leaf: true
+            }, {
+                name: 'Chrome',
+                completed: 0.25,
+                assignedTo: 'Shivam',
+                nodeType:'requirements',
+                leaf: true
+            }]
+        },{
+            name: 'Windows',
+            completed: 3.75,
+            assignedTo: 'Darrell Meyer',
+            nodeType:'folder',
+            children: [{
+                name: 'FireFox',
+                completed: 0.25,
+                assignedTo: 'Darrell Meyer',
+                nodeType:'requirements',
+                leaf: true
+            }, {
+                name: 'Safari',
+                completed: 0.25,
+                assignedTo: 'Darrell Meyer',
+                nodeType:'requirements',
+                leaf: true
+            }, {
+                name: 'Chrome',
+                completed: 0.25,
+                assignedTo: 'Darrell Meyer',
+                nodeType:'requirements',
+                leaf: true
+            },{
+                name: 'Internet Exploder',
+                completed: 3,
+                assignedTo: 'Darrell Meyer',
+                nodeType:'requirements',
+                leaf: true
+            }]
+        },{
+            name: 'Linux',
+            completed: 0.5,
+            assignedTo: 'Aaron Conran',
+            nodeType:'folder',
+            children: [{
+                name: 'FireFox',
+                completed: 0.25,
+                assignedTo: 'Aaron Conran',
+                nodeType:'requirements',
+                leaf: true
+            }, {
+                name: 'Chrome',
+                completed: 0.25,
+                assignedTo: 'Aaron Conran',
+                nodeType:'requirements',
+                leaf: true
+            }]
+        }]
+    }
+]}

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+    <script src="extjs/ext-all.js" type="text/javascript"></script>
+    <style type="text/css">
+        .myComboBoxCSS input{
+            border: 1px solid #B5B8C8 !important;
+            border-right:0px !important;
+            border-radius:5px 0px 0px 5px !important;
+            padding-left:10px !important;
+            background-image: none !important;
+            background-color: White !important;
+            height:25px !important;
+        }
+        .myComboBoxTriggerCSS{
+            background:transparent url(/images/dd-arrow-hover.png) no-repeat 0 0 !important;
+            cursor:pointer;
+            border: 1px solid #B5B8C8 !important;
+            border-left:0px !important;
+            background-position: center center !important;
+            border-radius:0px 5px 5px 0px !important;
+            height:25px !important;
+            width:25px !important;
+        }
+        
+        /* To change list box */
+        .comboBox_ListBoxCSS
+        {
+            border-radius:0px;
+            border: 1px solid #B5B8C8 !important;
+        }
+ 
+        /* To change items in list box */
+        .comboBox_ListBoxCSS li.x-boundlist-item {
+            font-size: 11px;
+            border: 0px;
+            padding-left:10px;
+        }
+        
+        .comboBox_ListBoxCSS li.x-boundlist-item-over{
+            background:#1f5285;
+            border: 0px;
+            color:White;
+        }
+        
+        .comboBox_ListBoxCSS li.x-boundlist-selected{
+            background:#1f5285;
+            border: 0px;
+            color:White;
+        }​
+    </style>
+    <script type="text/javascript">
+
+        Ext.onReady(function () {
+            var ds = Ext.create('Ext.data.ArrayStore', {
+                data: [[123, 'Hello'],
+                ['1', 'One'], ['2', 'Two'], ['3', 'Three'], ['4', 'Four'], ['5', 'Five'],
+                ['6', 'Six'], ['7', 'Seven'], ['8', 'Eight'], ['9', 'Nine']],
+                fields: ['value', 'text'],
+                sortInfo: {
+                    field: 'value',
+                    direction: 'ASC'
+                }
+            });
+
+            var panel = Ext.create('Ext.panel.Panel', {
+                renderTo: "itemselector",
+                height:300,
+                title:'Combo',
+                    items: [
+                        {
+                            fieldLabel: 'Select Type',
+                            xtype: 'combobox',
+                            cls: 'myComboBoxCSS',
+                            triggerCls: 'myComboBoxTriggerCSS',
+                            store:ds,
+                            queryMode: 'local',
+                            displayField: 'text',
+                            valueField: 'value',
+                            width: 555,
+                            labelWidth: 210,
+                            editable: false,
+                            emptyText: 'Select One',
+                            labelStyle:'padding-top:5px',
+                            listConfig:{
+                                cls:'comboBox_ListBoxCSS'
+                            }
+                        },
+                        {
+                            xtype: 'textfield',
+                            fieldLabel: 'External ID',
+                            width: 555,
+                            labelWidth: 210,
+                            height:25,
+                            labelStyle:'padding-top:5px',
+                            fieldStyle: 'background-color: White; background-image: none; border: 1px solid #B5B8C8; border-radius:5px;'
+                        }
+                    ]
+            });
+
+    });
+    </script>
+</head>
+<body>
+<div id="itemselector"></div>
+<div id="Div1"></div>
+</body>
+</html>

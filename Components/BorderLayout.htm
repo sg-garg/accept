@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Border Layout</title>
+     <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+     <link href="Styles/Site2.css" rel="stylesheet" type="text/css" />
+    <script src="extjs/ext-all.js" type="text/javascript"></script>
+    <script src="Scripts/customTabPanel.js" type="text/javascript"></script>
+    <script src="Scripts/TopMenu.js" type="text/javascript"></script>
+    <script src="Scripts/TopSubToolBar.js" type="text/javascript"></script>
+    <script src="Scripts/TreeControls.js" type="text/javascript"></script>
+    <script src="Scripts/General-PropertyTab.js" type="text/javascript"></script>
+    <script src="Scripts/GeneralTab.js" type="text/javascript"></script>
+    <script src="Scripts/PropertiesTab.js" type="text/javascript"></script>
+    <script src="Scripts/ContentTab.js" type="text/javascript"></script>
+    <script src="Scripts/PlansTab.js" type="text/javascript"></script>
+    <script src="Scripts/ResourcingsTab.js" type="text/javascript"></script>
+    <script src="Scripts/RelationshipsTab.js" type="text/javascript"></script>
+    <script src="Scripts/RequirementDependenciesTab.js" type="text/javascript"></script>
+    <script src="Scripts/IssuesTab.js" type="text/javascript"></script>
+    <script src="Scripts/TabMenu.js" type="text/javascript"></script>
+      
+   
+    <script type="text/javascript">
+        Ext.require(['*']);
+        Ext.onReady(function () {
+            Ext.QuickTips.init();
+
+            Ext.create('Ext.Viewport', {
+                layout: {
+                    type: 'border'
+                },
+                items: [{
+                    region: 'north',
+                    height: 66,
+                    layout: {
+                        type : 'vbox',
+                        align : 'stretch',
+                        pack  : 'start'
+                    },
+                    items: [
+                        {
+                            flex:1,
+                            dockedItems: [topMenuBar]
+                        },
+                        {
+                            flex:1,
+                            dockedItems: [topSubToolBar]
+                        }
+                    ]
+                }, {
+                    region: 'west',
+                    collapsible: true,
+                    //title: 'Starts at width 30%',
+                    split: true,
+                    hideCollapseTool: true,
+                    width: '23%',
+                    layout: 'border',
+                    id:'leftPanelTree',
+                    border: true,
+                    items: [{
+                        region: 'center',
+                        layout: {
+                            type: 'vbox',
+                            align: 'stretch',
+                            pack: 'start'
+                        },
+                        items: [
+                         tabsHeaderInfo1,
+                        treeFilterToolbar,
+                        treeGridPanle
+                        ]
+                    }]
+                }, {
+                    region: 'center',
+                    layout: 'border',
+                    border: false,
+                    items: [{
+                        region: 'center',
+                        layout: {
+                            type: 'vbox',
+                            align : 'stretch',
+                            pack  : 'start'
+                        },
+                        items:[
+                            tabsHeaderInfoDisplay,
+                            tabsBar
+                        ] 
+                    }]
+                }]
+            });
+        });
+    
+    </script>
+</head>
+<body>
+
+</body>
+</html>

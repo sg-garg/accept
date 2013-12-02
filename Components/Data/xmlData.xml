@@ -1,0 +1,796 @@
+<Name>Platforms</Name>
+<InternalID>12</InternalID>
+<Completed>50</Completed>
+<AssignedTo>user1</AssignedTo>
+<BasedOnIdea>myidea</BasedOnIdea>
+<BriefDescription>this is the first item</BriefDescription>
+<CreationDate>12/12/2013</CreationDate>
+<EstimationConfidence>what</EstimationConfidence>
+<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+<Lifecycle>QA</Lifecycle>
+<PlanPriority>High</PlanPriority>
+<Attachment>yes</Attachment>
+<Release>Release 9.1</Release>
+<Rollup>upeer</Rollup>
+<Sn123>12345</Sn123>
+<Team>COE</Team>
+<NodeType>Folder</NodeType>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+				<Children>
+					<Name>Platforms</Name>
+					<InternalID>12</InternalID>	
+					<Completed>50</Completed>
+					<AssignedTo>user1</AssignedTo>
+					<BasedOnIdea>myidea</BasedOnIdea>
+					<BriefDescription>this is the first item</BriefDescription>
+					<CreationDate>12/12/2013</CreationDate>
+					<EstimationConfidence>what</EstimationConfidence>
+					<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+					<Lifecycle>QA</Lifecycle>
+					<PlanPriority>High</PlanPriority>
+					<Attachment>yes</Attachment>
+					<Release>Release 9.1</Release>
+					<Rollup>upeer</Rollup>
+					<Sn123>12345</Sn123>
+					<Team>COE</Team>
+					<NodeType>Folder</NodeType>
+				</Children>
+				<Children>
+					<Name>Platforms</Name>
+					<InternalID>12</InternalID>	
+					<Completed>50</Completed>
+					<AssignedTo>user1</AssignedTo>
+					<BasedOnIdea>myidea</BasedOnIdea>
+					<BriefDescription>this is the first item</BriefDescription>
+					<CreationDate>12/12/2013</CreationDate>
+					<EstimationConfidence>what</EstimationConfidence>
+					<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+					<Lifecycle>QA</Lifecycle>
+					<PlanPriority>High</PlanPriority>
+					<Attachment>yes</Attachment>
+					<Release>Release 9.1</Release>
+					<Rollup>upeer</Rollup>
+					<Sn123>12345</Sn123>
+					<Team>COE</Team>
+					<NodeType>Folder</NodeType>
+				</Children>	
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+	</Children>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>	
+	</Children>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+				<Children>
+					<Name>Platforms</Name>
+					<InternalID>12</InternalID>	
+					<Completed>50</Completed>
+					<AssignedTo>user1</AssignedTo>
+					<BasedOnIdea>myidea</BasedOnIdea>
+					<BriefDescription>this is the first item</BriefDescription>
+					<CreationDate>12/12/2013</CreationDate>
+					<EstimationConfidence>what</EstimationConfidence>
+					<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+					<Lifecycle>QA</Lifecycle>
+					<PlanPriority>High</PlanPriority>
+					<Attachment>yes</Attachment>
+					<Release>Release 9.1</Release>
+					<Rollup>upeer</Rollup>
+					<Sn123>12345</Sn123>
+					<Team>COE</Team>
+					<NodeType>Folder</NodeType>
+				</Children>
+				<Children>
+					<Name>Platforms</Name>
+					<InternalID>12</InternalID>	
+					<Completed>50</Completed>
+					<AssignedTo>user1</AssignedTo>
+					<BasedOnIdea>myidea</BasedOnIdea>
+					<BriefDescription>this is the first item</BriefDescription>
+					<CreationDate>12/12/2013</CreationDate>
+					<EstimationConfidence>what</EstimationConfidence>
+					<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+					<Lifecycle>QA</Lifecycle>
+					<PlanPriority>High</PlanPriority>
+					<Attachment>yes</Attachment>
+					<Release>Release 9.1</Release>
+					<Rollup>upeer</Rollup>
+					<Sn123>12345</Sn123>
+					<Team>COE</Team>
+					<NodeType>Folder</NodeType>
+				</Children>
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>	
+		</Children>
+	</Children>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+	</Children>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+	</Children>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+	</Children>
+</Children>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+		</Children>
+		<Children>
+			<Name>Platforms</Name>
+			<InternalID>12</InternalID>	
+			<Completed>50</Completed>
+			<AssignedTo>user1</AssignedTo>
+			<BasedOnIdea>myidea</BasedOnIdea>
+			<BriefDescription>this is the first item</BriefDescription>
+			<CreationDate>12/12/2013</CreationDate>
+			<EstimationConfidence>what</EstimationConfidence>
+			<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+			<Lifecycle>QA</Lifecycle>
+			<PlanPriority>High</PlanPriority>
+			<Attachment>yes</Attachment>
+			<Release>Release 9.1</Release>
+			<Rollup>upeer</Rollup>
+			<Sn123>12345</Sn123>
+			<Team>COE</Team>
+			<NodeType>Folder</NodeType>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>
+			<Children>
+				<Name>Platforms</Name>
+				<InternalID>12</InternalID>	
+				<Completed>50</Completed>
+				<AssignedTo>user1</AssignedTo>
+				<BasedOnIdea>myidea</BasedOnIdea>
+				<BriefDescription>this is the first item</BriefDescription>
+				<CreationDate>12/12/2013</CreationDate>
+				<EstimationConfidence>what</EstimationConfidence>
+				<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+				<Lifecycle>QA</Lifecycle>
+				<PlanPriority>High</PlanPriority>
+				<Attachment>yes</Attachment>
+				<Release>Release 9.1</Release>
+				<Rollup>upeer</Rollup>
+				<Sn123>12345</Sn123>
+				<Team>COE</Team>
+				<NodeType>Folder</NodeType>
+			</Children>	
+		</Children>	
+	</Children>
+	<Children>
+		<Name>Platforms</Name>
+		<InternalID>12</InternalID>	
+		<Completed>50</Completed>
+		<AssignedTo>user1</AssignedTo>
+		<BasedOnIdea>myidea</BasedOnIdea>
+		<BriefDescription>this is the first item</BriefDescription>
+		<CreationDate>12/12/2013</CreationDate>
+		<EstimationConfidence>what</EstimationConfidence>
+		<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+		<Lifecycle>QA</Lifecycle>
+		<PlanPriority>High</PlanPriority>
+		<Attachment>yes</Attachment>
+		<Release>Release 9.1</Release>
+		<Rollup>upeer</Rollup>
+		<Sn123>12345</Sn123>
+		<Team>COE</Team>
+		<NodeType>Folder</NodeType>
+	</Children>
+</Children>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+</Children>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+</Children>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+</Children>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+</Children>
+<Children>
+	<Name>Platforms</Name>
+	<InternalID>12</InternalID>	
+	<Completed>50</Completed>
+	<AssignedTo>user1</AssignedTo>
+	<BasedOnIdea>myidea</BasedOnIdea>
+	<BriefDescription>this is the first item</BriefDescription>
+	<CreationDate>12/12/2013</CreationDate>
+	<EstimationConfidence>what</EstimationConfidence>
+	<LastUpdatedDate>13/12/2013</LastUpdatedDate>
+	<Lifecycle>QA</Lifecycle>
+	<PlanPriority>High</PlanPriority>
+	<Attachment>yes</Attachment>
+	<Release>Release 9.1</Release>
+	<Rollup>upeer</Rollup>
+	<Sn123>12345</Sn123>
+	<Team>COE</Team>
+	<NodeType>Folder</NodeType>
+</Children>

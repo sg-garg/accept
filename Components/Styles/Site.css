@@ -1,0 +1,361 @@
+﻿/* Combo CSS End*/
+* {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    color: #000;
+    line-height: normal;
+    direction: ltr;
+}
+
+.resourcingResourceRollupTab {
+   background-image: url("\/images\/money-icon.png");
+}
+.resourcingResourceAssignmentTab {
+   background-image: url("\/images\/money-icon.png");
+}
+.resourcingTaskAssignmentTab {
+   background-image: url("\/images\/task_link_icon.png");
+}
+.resourcingHistoryTab {
+   background-image: url("\/images\/history-dd-icon.png");
+}
+.relationshipsRelationshipDetailsTab {
+   background-image: url("\/images\/relationship-icon.png");
+}
+.relationshipsAttachmentsTab {
+   background-image: url("\/images\/refresh-icon.png");
+}
+.relationshipsHistoryTab {
+   background-image: url("\/images\/history-dd-icon.png");
+}
+
+.x-tab-default-top button,
+.x-tab-default-top .x-tab-inner {
+        height: 16px !important;
+}
+.searchBackGroundPanel{
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+
+.generalVerticalTabNameDiplayCSS{
+    font-size: 18px !important;
+    font-weight: bold;
+    float: left;
+    padding: 7px 0 6px 10px;
+}
+.tabsHeaderInfoDisplayCSS{
+    font-size: 18px !important;
+    font-weight: bold;
+    color:#333333;
+    float: left;
+    padding:3px 0 5px 5Px;
+    text-transform:capitalize;
+}
+.folderTreeSplitButtonCSS{
+    background-position: center center;
+    background-image: url(\/images\/folder-icon.png) !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-right:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.folderTreeSplitButtonCSS.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.displayTreeSplitButtonCSS{
+    background-position: center center;
+    background-image: url(\/images\/hierarchy-icon.png) !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-right:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.displayTreeSplitButtonCSS.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.filterTreeSplitButtonCSS{
+    background-position: center center;
+    background-image: url(\/images\/filter-icon.png) !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-right:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.filterTreeSplitButtonCSS.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.collapseTreeButtonCSS{
+    background-position: center center;
+    background-image: url(\/images\/expand_arrow.png) !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.collapseTreeButtonCSS.x-btn-over
+{
+    background-color:#efefef !important;
+}
+
+.propertiesGeneralBtn
+{
+    background-image: url(\/images\/india_gen_properties.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.propertiesGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.propertiesGeneralBtnSelected
+{
+    background-image: url(\/images\/india_gen_properties_sel.png);
+    background-color:#ffffff !important;
+}
+.propertiesGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.attachementsGeneralBtn
+{
+    background-image: url(\/images\/india_gen_attach.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-top:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.attachementsGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.attachementsGeneralBtnSelected
+{
+    background-image: url(\/images\/india_gen_attach_sel.png);
+    background-color:#ffffff !important;
+}
+.attachementsGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.notesNDiscussionsGeneralBtn
+{
+    background-image: url(\/images\/india_gen_NnD.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-top:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.notesNDiscussionsGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.notesNDiscussionsGeneralBtnSelected
+{
+    background-image: url(\/images\/india_gen_NnD_sel.png);
+    background-color:#ffffff !important;
+}
+.notesNDiscussionsGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.activitiesGeneralBtn
+{
+    background-image: url(\/images\/India_gen_activity.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-top:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.activitiesGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.activitiesGeneralBtnSelected
+{
+    background-image: url(\/images\/India_gen_activity_sel.png);
+    background-color:#ffffff !important;
+}
+.activitiesGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.stackholdersGeneralBtn
+{
+    background-image: url(\/images\/India_gen_sh.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-top:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.stackholdersGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.stackholdersGeneralBtnSelected
+{
+    background-image: url(\/images\/India_gen_sh_sel.png);
+    background-color:#ffffff !important;
+}
+.stackholdersGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.revisionsGeneralBtn
+{
+    background-image: url(\/images\/India_gen_revision.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-top:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.revisionsGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.revisionsGeneralBtnSelected
+{
+    background-image: url(\/images\/India_gen_revision_sel.png);
+    background-color:#ffffff !important;
+}
+.revisionsGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.historyGeneralBtn
+{
+    background-image: url(\/images\/India_gen_history.png);
+    padding:10px 0 10px 24px !important;
+    background-position: 5px !important;
+    background-color:#cac9c9 !important;
+    border-color:#999999 !important;
+    border-radius:0px !important;
+    border-top:0px !important;
+    border-width:1px !important;
+    border-style:solid;
+}
+.historyGeneralBtn.x-btn-over
+{
+    background-color:#efefef !important;
+}
+.historyGeneralBtnSelected
+{
+    background-image: url(\/images\/India_gen_history_sel.png);
+    background-color:#ffffff !important;
+   
+}
+.historyGeneralBtnSelected.x-btn-over
+{
+    background-color:#ffffff !important;
+}
+
+.helpInfoButtonCSS{
+    background-position: center center;
+    background: url(../images/sprite_icons.png) no-repeat -5px -90px !important;
+    border:0;
+}
+
+.myComboTriggerCls{
+    background:transparent url(../images/dd-arrow-hover.png) no-repeat 0 0;
+    cursor:pointer;
+    border-left:0px;
+    border: 1px solid #B5B8C8;
+    background-position: center center;
+    border-radius:0px 5px 5px 0px !important;
+}
+
+
+/* Combo CSS Start*/
+.myComboBoxCSS input{
+    border: 1px solid #B5B8C8 !important;
+    border-right:0px !important;
+    border-radius:5px 0px 0px 5px !important;
+    padding-left:10px !important;
+    background-image: none !important;
+    background-color: White !important;
+    height:25px !important;
+}
+.myComboBoxTriggerCSS{
+    background:transparent url(/images/dd-arrow-hover.png) no-repeat 0 0 !important;
+    cursor:pointer;
+    border: 1px solid #B5B8C8 !important;
+    border-left:0px !important;
+    background-position: center center !important;
+    border-radius:0px 5px 5px 0px !important;
+    height:25px !important;
+    width:25px !important;
+}
+        
+.comboBox_ListBoxCSS
+{
+    border-radius:0px;
+    border: 1px solid #B5B8C8 !important;
+}
+ 
+.comboBox_ListBoxCSS li.x-boundlist-item {
+    border: 0px;
+    padding-left:10px;
+}
+        
+.comboBox_ListBoxCSS li.x-boundlist-item-over{
+    background:#1f5285;
+    border: 0px;
+    color:White;
+}
+        
+.comboBox_ListBoxCSS li.x-boundlist-selected{
+    background:#1f5285;
+    border: 0px;
+    color:White;
+}​
+
+.mygreattree .x-grid-header-ct {
+    height: 50px !important;
+}
+
+.mygreattree .x-grid-body {
+    top: 50px !important;
+}
