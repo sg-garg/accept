@@ -256,7 +256,7 @@ var treeFilterToolbar = {
             var treeGridPanle = new Ext.tree.TreePanel({
                 id: 'myTreeControlPanel',
                 //title: 'Core Team Projects',
-                componentCls: 'mygreattree',
+               // componentCls: 'mygreattree',
                 flex: 1,
                 //collapsible: true,
                 useArrows: true,
