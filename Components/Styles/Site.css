@@ -352,3 +352,18 @@
     color:White;
 }​
 
+.mygreattree .x-grid-header-ct {
+    height: 25px !important;
+}
+
+.mygreattree .x-box-item {
+    height: 25px !important;
+}
+
+.mygreattree .x-box-inner {
+    height: 25px !important;
+}
+
+.mygreattree .x-grid-body {
+    top: 25px !important;
+}

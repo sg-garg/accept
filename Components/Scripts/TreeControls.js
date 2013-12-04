@@ -238,7 +238,7 @@ var treeFilterToolbar = {
                     { name: 'resourceCost', type: 'string' },
                     { name: 'resourceDemand', type: 'string' },
                     { name: 'rollup', type: 'string' },
-                    { name: 'sn', type: 'string' },
+                    { name: 'sn123', type: 'string' },
                     { name: 'team', type: 'string' }
                 ]
             });
@@ -256,25 +256,28 @@ var treeFilterToolbar = {
             var treeGridPanle = new Ext.tree.TreePanel({
                 id: 'myTreeControlPanel',
                 //title: 'Core Team Projects',
-               // componentCls: 'mygreattree',
+                componentCls: 'mygreattree',
                 flex: 1,
                 //collapsible: true,
                 useArrows: true,
                 rootVisible: false,
                 store: treeControlStore,
                 multiSelect: true,
+                autoScroll:true,
                 //singleExpand: true,
                 //the 'columns' property is now 'headers'
                 columns: [{
                     xtype: 'treecolumn', //this is so we know which column will show the tree
                     text: 'Name',
                     dataIndex: 'name',
-                    flex: 3,
+                    flex: 2,
+                    minWidth: 150,
                     menuDisabled: true,
                     sortable: true
                 }, {
                     text: '% Completed',
                     flex: 1,
+                    minWidth: 75,
                     dataIndex: 'completed',
                     menuDisabled: true,
                     sortable: true
@@ -283,6 +286,7 @@ var treeFilterToolbar = {
                     //  xtype: 'templatecolumn',
                     text: 'Assigned To',
                     flex: 1,
+                    minWidth: 75,
                     dataIndex: 'assignedTo',
                     menuDisabled: true,
                     sortable: true
@@ -291,6 +295,7 @@ var treeFilterToolbar = {
                     //  xtype: 'templatecolumn',
                     text: 'Node Type',
                     flex: 1,
+                    minWidth:75,
                     dataIndex: 'nodeType',
                     menuDisabled: true,
                     sortable: true
@@ -298,7 +303,7 @@ var treeFilterToolbar = {
                 {
                     width: 25,
                     //xtype:'container',
-                    style: 'background: url(../images/sprite.png) no-repeat -873px 4px; margin-left:6px;',
+                    style: 'background: url(../images/sprite.png) no-repeat -873px 4px; margin-left:8px; margin-top:4px;',
                     menuDisabled: true,
                     listeners: {
                         headerclick: function (header, column, e, t, eOpts) {
@@ -309,6 +314,7 @@ var treeFilterToolbar = {
             ],
                 listeners: {
                     itemcontextmenu: function (view, record, item, index, event) {
+                        //Ext.getCmp('myTreeControlPanel').columns[1].setVisible(false);
                         currentSelectedNode = record;
                         menu1.showAt(event.getXY());
                         if (record.data.nodeType === 'requirements') {
@@ -321,6 +327,7 @@ var treeFilterToolbar = {
                         event.stopEvent();
                     },
                     itemclick: function (view, node, item, index, e, eOpts) {
+                        //Ext.getCmp('myTreeControlPanel').columns[1].setVisible(true);
                         Ext.getCmp('tabsHeaderInfoDisplayID').setText(node.data.nodeType + ' - ' + node.data.name);
                     }
 
@@ -456,6 +463,46 @@ var treeFilterToolbar = {
                                 {
                                     text: 'Level 5',
                                     handler: function () { openRecursive(currentSelectedNode, 5) }
+                                },
+                                {
+                                    text: 'Level 6',
+                                    handler: function () { openRecursive(currentSelectedNode, 6) }
+                                },
+                                {
+                                    text: 'Level 7',
+                                    handler: function () { openRecursive(currentSelectedNode, 7) }
+                                },
+                                {
+                                    text: 'Level 8',
+                                    handler: function () { openRecursive(currentSelectedNode, 8) }
+                                },
+                                {
+                                    text: 'Level 9',
+                                    handler: function () { openRecursive(currentSelectedNode, 9) }
+                                },
+                                {
+                                    text: 'Level 10',
+                                    handler: function () { openRecursive(currentSelectedNode, 10) }
+                                },
+                                {
+                                    text: 'Level 11',
+                                    handler: function () { openRecursive(currentSelectedNode, 11) }
+                                },
+                                {
+                                    text: 'Level 12',
+                                    handler: function () { openRecursive(currentSelectedNode, 12) }
+                                },
+                                {
+                                    text: 'Level 13',
+                                    handler: function () { openRecursive(currentSelectedNode, 13) }
+                                },
+                                {
+                                    text: 'Level 14',
+                                    handler: function () { openRecursive(currentSelectedNode, 14) }
+                                },
+                                {
+                                    text: 'Level 15',
+                                    handler: function () { openRecursive(currentSelectedNode, 15) }
                                 }
                             ]
                         }
@@ -466,17 +513,17 @@ var treeFilterToolbar = {
                 ]
             });
 
-                function openRecursive(node, level) {
-                    var ch = node.childNodes;
-                    if (ch.length > 0 && level >0) {
-                        if (!node.isExpanded()) {
-                            node.expand();
-                        }
-                        Ext.Array.each(ch, function (c) {
-                            openRecursive(c, level-1);
-                        });
+            function openRecursive(node, level) {
+                var ch = node.childNodes;
+                if (ch.length > 0 && level >0) {
+                    if (!node.isExpanded()) {
+                        node.expand();
                     }
-                };
+                    Ext.Array.each(ch, function (c) {
+                        openRecursive(c, level-1);
+                    });
+                }
+            };
 
             Ext.define("Post", {
                 extend: 'Ext.data.Model',
