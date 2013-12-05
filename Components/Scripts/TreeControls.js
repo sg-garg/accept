@@ -314,14 +314,12 @@ var treeFilterToolbar = {
             ],
                 listeners: {
                     itemcontextmenu: function (view, record, item, index, event) {
-                        //Ext.getCmp('myTreeControlPanel').columns[1].setVisible(false);
                         currentSelectedNode = record;
                         menu1.showAt(event.getXY());
                         hideShowMenuForSelectedNode(record);
                         event.stopEvent();
                     },
                     itemclick: function (view, node, item, index, e, eOpts) {
-                        //Ext.getCmp('myTreeControlPanel').columns[1].setVisible(true);
                         Ext.getCmp('tabsHeaderInfoDisplayID').setText(node.data.nodeType + ' - ' + node.data.name);
                     }
 
@@ -610,7 +608,7 @@ var treeFilterToolbar = {
                     }, '-',
                     {
                         text: 'Copy',
-                        id: 'tcm_Copy'
+                        id: 'tcm_Copy' 
                     },
                     {
                         text: 'Paste',
