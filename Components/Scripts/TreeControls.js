@@ -263,7 +263,7 @@ var treeFilterToolbar = {
                 rootVisible: false,
                 store: treeControlStore,
                 multiSelect: true,
-                autoScroll:true,
+                autoScroll: true,
                 //singleExpand: true,
                 //the 'columns' property is now 'headers'
                 columns: [{
@@ -295,7 +295,7 @@ var treeFilterToolbar = {
                     //  xtype: 'templatecolumn',
                     text: 'Node Type',
                     flex: 1,
-                    minWidth:75,
+                    minWidth: 75,
                     dataIndex: 'nodeType',
                     menuDisabled: true,
                     sortable: true
@@ -317,13 +317,7 @@ var treeFilterToolbar = {
                         //Ext.getCmp('myTreeControlPanel').columns[1].setVisible(false);
                         currentSelectedNode = record;
                         menu1.showAt(event.getXY());
-                        if (record.data.nodeType === 'requirements') {
-                            Ext.getCmp('treeContextMenuNewChildMenuID').setVisible(false);
-                            Ext.getCmp('treeContextMenuExpandMenuID').setVisible(false);
-                        } else {
-                            Ext.getCmp('treeContextMenuNewChildMenuID').setVisible(true);
-                            Ext.getCmp('treeContextMenuExpandMenuID').setVisible(true);
-                        }
+                        hideShowMenuForSelectedNode(record);
                         event.stopEvent();
                     },
                     itemclick: function (view, node, item, index, e, eOpts) {
@@ -334,6 +328,30 @@ var treeFilterToolbar = {
                 }
             });
 
+            function hideShowMenuForSelectedNode(record) {
+                Ext.getCmp('tcm_ViewSelectedFolder').disabled = false;
+                Ext.getCmp('tcm_Sibling_Requirement').setVisible(true);
+                Ext.getCmp('tcm_Sibling_Folder').setVisible(true);
+                Ext.getCmp('tcm_Sibling_FunctionalArea').setVisible(true);
+                Ext.getCmp('tcm_Child_Folder').setVisible(true);
+                Ext.getCmp('tcm_Child_FunctionalArea').setVisible(true);
+                Ext.getCmp('tcm_Child_Requirement').setVisible(true);
+
+                if (record.data.nodeType === 'requirements') {
+                    Ext.getCmp('tcm_Sibling_Folder').setVisible(false);
+                    Ext.getCmp('tcm_Child_Folder').setVisible(false);
+                    Ext.getCmp('tcm_Child_FunctionalArea').setVisible(false);
+                    Ext.getCmp('tcm_Child_Requirement').setVisible(false);
+                    Ext.getCmp('tcm_ViewSelectedFolder').disabled = true;  // make this inactive
+                } else if (record.data.nodeType === 'folder') {
+                    Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
+                    Ext.getCmp('tcm_Child_Requirement').setVisible(false);
+                } else if (record.data.nodeType === 'functionalArea') {
+                    Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
+                    Ext.getCmp('tcm_Child_Folder').setVisible(false);
+                    Ext.getCmp('tcm_ViewSelectedFolder').disabled = true; // make this inactive
+                }
+            }
             function hideTreeColumn() {
                 // alert(record.data.task)
                 //treePanel1CurrentNode = record;
@@ -347,53 +365,53 @@ var treeFilterToolbar = {
 
             var currentSelectedNode = null;
             function createChildNode(item) {
-                if (item.text === 'New Folder') {
+                if (item.text === 'Folder') {
                     currentSelectedNode.appendChild({
                         name: 'New Folder Node',
                         completed: 3,
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
                         nodeType: 'folder'
                     });
-                } else if (item.text === 'New Requirement') {
+                } else if (item.text === 'Requirement (C)') {
                     currentSelectedNode.appendChild({
-                        name: 'New Requirement',
+                        name: 'New Requirement (C)',
                         completed: 3,
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
                         nodeType: 'requirements',
                         leaf: true
                     });
-                } else if (item.text === 'New Category') {
+                } else if (item.text === 'Functional Area') {
                     currentSelectedNode.appendChild({
-                        name: 'Added Category',
+                        name: 'Added Functional Area',
                         completed: 3,
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
-                        nodeType: 'category'
+                        nodeType: 'functionalArea'
                     });
                 }
             }
 
             function createSiblingNode(item) {
-                if (item.text === 'New Folder') {
+                if (item.text === 'Folder') {
                     currentSelectedNode.parentNode.appendChild({
                         name: 'New Folder Node',
                         completed: 3,
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
                         nodeType: 'folder'
                     });
-                } else if (item.text === 'New Requirement') {
+                } else if (item.text === 'Requirement (S)') {
                     currentSelectedNode.parentNode.appendChild({
-                        name: 'New Requirement',
+                        name: 'New Requirement (S)',
                         completed: 3,
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
                         nodeType: 'requirements',
                         leaf: true
                     });
-                } else if (item.text === 'New Category') {
+                } else if (item.text === 'Functional Area') {
                     currentSelectedNode.parentNode.appendChild({
-                        name: 'Added Category',
+                        name: 'Added Function Area',
                         completed: 3,
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
-                        nodeType: 'category'
+                        nodeType: 'functionalArea'
                     });
                 }
             }
@@ -401,47 +419,66 @@ var treeFilterToolbar = {
             var menu1 = new Ext.menu.Menu({
                 items: [
                     {
-                        text: 'New Child',
-                        id: 'treeContextMenuNewChildMenuID',
+                        text: 'View',
+                        id: 'tcm_View'
+                    },
+                    {
+                        text: 'View Selected Folder',
+                        id: 'tcm_ViewSelectedFolder'
+                    },'-',
+                    {
+                        text: 'New Sibling',
                         menu: {
                             items: [
                                 {
-                                    text: 'New Folder',
-                                    handler: createChildNode
+                                    text: 'Folder',
+                                    id: 'tcm_Sibling_Folder',
+                                    handler: createSiblingNode
                                 },
                                 {
-                                    text: 'New Requirement',
-                                    handler: createChildNode
+                                    text: 'Functional Area',
+                                    id: 'tcm_Sibling_FunctionalArea',
+                                    handler: createSiblingNode
                                 },
                                 {
-                                    text: 'New Category',
-                                    handler: createChildNode
+                                    text: 'Requirement (S)',
+                                    id: 'tcm_Sibling_Requirement',
+                                    handler: createSiblingNode
                                 }
                             ]
                         }
                     },
                     {
-                        text: 'Sibling',
+                        text: 'New Child',
+                        id: 'treeContextMenuNewChildMenuID',
                         menu: {
                             items: [
                                 {
-                                    text: 'New Folder',
-                                    handler: createSiblingNode
+                                    text: 'Folder',
+                                    id: 'tcm_Child_Folder',
+                                    handler: createChildNode
                                 },
                                 {
-                                    text: 'New Requirement',
-                                    handler: createSiblingNode
+                                    text: 'Functional Area',
+                                    id: 'tcm_Child_FunctionalArea',
+                                    handler: createChildNode
                                 },
                                 {
-                                    text: 'New Category',
-                                    handler: createSiblingNode
+                                    text: 'Requirement (C)',
+                                    id: 'tcm_Child_Requirement',
+                                    handler: createChildNode
                                 }
                             ]
                         }
                     }, '-',
                     {
-                        text: 'Expand',
-                        id: 'treeContextMenuExpandMenuID',
+                        text: 'Expand All Below',
+                        id: 'tcm_ExpandAllBelow',
+                        handler: function () { openRecursive(currentSelectedNode, 5000) }
+                    },
+                    {
+                        text: 'Expand Levels Below',
+                        id: 'tcm_ExpandLevelsBelow',
                         menu: {
                             items: [
                                 {
@@ -503,12 +540,117 @@ var treeFilterToolbar = {
                                 {
                                     text: 'Level 15',
                                     handler: function () { openRecursive(currentSelectedNode, 15) }
+                                },
+                                {
+                                    text: 'Level 16',
+                                    handler: function () { openRecursive(currentSelectedNode, 16) }
+                                },
+                                {
+                                    text: 'Level 17',
+                                    handler: function () { openRecursive(currentSelectedNode, 17) }
+                                },
+                                {
+                                    text: 'Level 18',
+                                    handler: function () { openRecursive(currentSelectedNode, 18) }
+                                },
+                                {
+                                    text: 'Level 19',
+                                    handler: function () { openRecursive(currentSelectedNode, 19) }
+                                },
+                                {
+                                    text: 'Level 20',
+                                    handler: function () { openRecursive(currentSelectedNode, 20) }
+                                },
+                                {
+                                    text: 'Level 21',
+                                    handler: function () { openRecursive(currentSelectedNode, 21) }
+                                },
+                                {
+                                    text: 'Level 22',
+                                    handler: function () { openRecursive(currentSelectedNode, 22) }
+                                },
+                                {
+                                    text: 'Level 23',
+                                    handler: function () { openRecursive(currentSelectedNode, 23) }
+                                },
+                                {
+                                    text: 'Level 24',
+                                    handler: function () { openRecursive(currentSelectedNode, 24) }
+                                },
+                                {
+                                    text: 'Level 25',
+                                    handler: function () { openRecursive(currentSelectedNode, 25) }
                                 }
                             ]
                         }
+                    },
+                    {
+                        text: 'Collapse All Below',
+                        id: 'tcm_CollapseAllBelow'
                     }, '-',
                     {
-                        text: 'Other Menu Items'
+                        text: 'Convert',
+                        id: 'tcm_Convert'
+                    }, '-',
+                    {
+                        text: 'Promote to Functional Area',
+                        id: 'tcm_PromoteToFA'
+                    },
+                    {
+                        text: 'Split Requirement',
+                        id: 'tcm_SplitR'
+                    },
+                    {
+                        text: 'Create Task from template',
+                        id: 'tcm_CreaterTFT'
+                    },
+                    {
+                        text: 'Merger Requirements',
+                        id: 'tcm_MergeR'
+                    }, '-',
+                    {
+                        text: 'Copy',
+                        id: 'tcm_Copy'
+                    },
+                    {
+                        text: 'Paste',
+                        id: 'tcm_Paste'
+                    },
+                    {
+                        text: 'Move/Link',
+                        id: 'tcm_MoveLink'
+                    },
+                    {
+                        text: 'Up',
+                        id: 'tcm_Up'
+                    },
+                    {
+                        text: 'Down',
+                        id: 'tcm_Down'
+                    },
+                    {
+                        text: 'Unlink',
+                        id: 'tcm_Unlink'
+                    },
+                    {
+                        text: 'Delete',
+                        id: 'tcm_Delete'
+                    }, '-',
+                    {
+                        text: 'Copy Link',
+                        id: 'tcm_CopyLink'
+                    }, '-',
+                    {
+                        text: 'Update Additional Properties',
+                        id: 'tcm_UpdateAP'
+                    },
+                    {
+                        text: 'Enter Resource Estimation',
+                        id: 'tcm_EnterRE'
+                    }, '-',
+                    {
+                        text: 'Create Bookmark',
+                        id: 'tcm_bookmark'
                     }
                 ]
             });

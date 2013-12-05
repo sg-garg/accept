@@ -367,3 +367,10 @@
 .mygreattree .x-grid-body {
     top: 25px !important;
 }
+
+/* Start - This is for changing collapsible css for whole application*/
+.x-border-layout-ct
+{
+    background-color:white !important;
+}
+/* End - This is for changing collapsible css for whole application*/
