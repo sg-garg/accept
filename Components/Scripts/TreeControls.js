@@ -327,7 +327,7 @@ var treeFilterToolbar = {
             });
 
             function hideShowMenuForSelectedNode(record) {
-                Ext.getCmp('tcm_ViewSelectedFolder').disabled = false;
+                Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(false);
                 Ext.getCmp('tcm_Sibling_Requirement').setVisible(true);
                 Ext.getCmp('tcm_Sibling_Folder').setVisible(true);
                 Ext.getCmp('tcm_Sibling_FunctionalArea').setVisible(true);
@@ -340,14 +340,14 @@ var treeFilterToolbar = {
                     Ext.getCmp('tcm_Child_Folder').setVisible(false);
                     Ext.getCmp('tcm_Child_FunctionalArea').setVisible(false);
                     Ext.getCmp('tcm_Child_Requirement').setVisible(false);
-                    Ext.getCmp('tcm_ViewSelectedFolder').disabled = true;  // make this inactive
+                    Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(true);
                 } else if (record.data.nodeType === 'folder') {
                     Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
                     Ext.getCmp('tcm_Child_Requirement').setVisible(false);
                 } else if (record.data.nodeType === 'functionalArea') {
                     Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
                     Ext.getCmp('tcm_Child_Folder').setVisible(false);
-                    Ext.getCmp('tcm_ViewSelectedFolder').disabled = true; // make this inactive
+                    Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(true);
                 }
             }
             function hideTreeColumn() {
@@ -590,22 +590,22 @@ var treeFilterToolbar = {
                         text: 'Convert',
                         id: 'tcm_Convert'
                     }, '-',
-                    {
-                        text: 'Promote to Functional Area',
-                        id: 'tcm_PromoteToFA'
-                    },
-                    {
-                        text: 'Split Requirement',
-                        id: 'tcm_SplitR'
-                    },
-                    {
-                        text: 'Create Task from template',
-                        id: 'tcm_CreaterTFT'
-                    },
-                    {
-                        text: 'Merger Requirements',
-                        id: 'tcm_MergeR'
-                    }, '-',
+//                    {
+//                        text: 'Promote to Functional Area',
+//                        id: 'tcm_PromoteToFA'
+//                    },
+//                    {
+//                        text: 'Split Requirement',
+//                        id: 'tcm_SplitR'
+//                    },
+//                    {
+//                        text: 'Create Task from template',
+//                        id: 'tcm_CreaterTFT'
+//                    },
+//                    {
+//                        text: 'Merger Requirements',
+//                        id: 'tcm_MergeR'
+//                    }, '-',
                     {
                         text: 'Copy',
                         id: 'tcm_Copy' 
