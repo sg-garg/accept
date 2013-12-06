@@ -1,0 +1,5 @@
+D:\ext\Git\Accept\Components\bin\Components.dll
+D:\ext\Git\Accept\Components\bin\Components.pdb
+D:\ext\Git\Accept\Components\obj\Debug\ResolveAssemblyReference.cache
+D:\ext\Git\Accept\Components\obj\Debug\Components.dll
+D:\ext\Git\Accept\Components\obj\Debug\Components.pdb
