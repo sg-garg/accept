@@ -352,20 +352,32 @@
     color:White;
 }​
 
-.mygreattree .x-grid-header-ct {
+.customTreeGridCls .x-grid-header-ct {
     height: 25px !important;
 }
 
-.mygreattree .x-box-item {
+.customTreeGridCls .x-box-item {
     height: 25px !important;
 }
 
-.mygreattree .x-box-inner {
+.customTreeGridCls .x-box-inner {
     height: 25px !important;
 }
 
-.mygreattree .x-grid-body {
+.customTreeGridCls .x-grid-body {
     top: 25px !important;
+}
+
+/* Grid cells when the mouse cursor is over the row */ 
+.customTreeGridCls .x-grid-row-over .x-grid-cell .x-grid-cell-inner{ 
+    background-color:#1f5285;
+    color:White !important;
+} 
+ 
+/* Grid cells in the selected row */ 
+.customTreeGridCls .x-grid-row-selected .x-grid-cell .x-grid-cell-inner{ 
+    background-color: #1f5285 !important; 
+    color:White !important;
 }
 
 /* Start - This is for changing collapsible css for whole application*/

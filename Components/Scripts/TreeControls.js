@@ -256,7 +256,7 @@ var treeFilterToolbar = {
             var treeGridPanle = new Ext.tree.TreePanel({
                 id: 'myTreeControlPanel',
                 //title: 'Core Team Projects',
-                componentCls: 'mygreattree',
+                cls: 'customTreeGridCls',
                 flex: 1,
                 //collapsible: true,
                 useArrows: true,
@@ -584,7 +584,8 @@ var treeFilterToolbar = {
                     },
                     {
                         text: 'Collapse All Below',
-                        id: 'tcm_CollapseAllBelow'
+                        id: 'tcm_CollapseAllBelow',
+                        handler: function () { closeRecursive(currentSelectedNode) }
                     }, '-',
                     {
                         text: 'Convert',
@@ -662,6 +663,16 @@ var treeFilterToolbar = {
                     Ext.Array.each(ch, function (c) {
                         openRecursive(c, level-1);
                     });
+                }
+            };
+
+            function closeRecursive(node) {
+                var ch = node.childNodes;
+                if (ch.length > 0 && node.isExpanded()) {
+                    Ext.Array.each(ch, function (c) {
+                        closeRecursive(c);
+                    });
+                    node.collapse();
                 }
             };
 
