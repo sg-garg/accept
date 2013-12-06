@@ -327,6 +327,7 @@ var treeFilterToolbar = {
             });
 
             function hideShowMenuForSelectedNode(record) {
+                
                 Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(false);
                 Ext.getCmp('tcm_Sibling_Requirement').setVisible(true);
                 Ext.getCmp('tcm_Sibling_Folder').setVisible(true);
@@ -341,6 +342,7 @@ var treeFilterToolbar = {
                     Ext.getCmp('tcm_Child_FunctionalArea').setVisible(false);
                     Ext.getCmp('tcm_Child_Requirement').setVisible(false);
                     Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(true);
+//                    Ext.getCmp('tcm_View').setIconCls('tcm_View-Dis');
                 } else if (record.data.nodeType === 'folder') {
                     Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
                     Ext.getCmp('tcm_Child_Requirement').setVisible(false);
@@ -348,6 +350,7 @@ var treeFilterToolbar = {
                     Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
                     Ext.getCmp('tcm_Child_Folder').setVisible(false);
                     Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(true);
+                    Ext.getCmp('tcm_ViewSelectedFolder').icon = '/images/Old_Images/buttons_small/Filter_dis.png';
                 }
             }
             function hideTreeColumn() {
@@ -419,16 +422,17 @@ var treeFilterToolbar = {
                     {
                         text: 'View',
                         id: 'tcm_View',
-                        icon: '/images/Old_Images/buttons_small/View.png'
+                        iconCls: 'tcm_View'
                     },
                     {
                         text: 'View Selected Folder',
                         id: 'tcm_ViewSelectedFolder',
-                        icon: '/images/Old_Images/buttons_small/Filter.png'
+                        iconCls: 'tcm_ViewSelectedFolder'
                     },'-',
                     {
                         text: 'New Sibling',
-                        icon: '/images/Old_Images/buttons_small/NewSibling.png',
+                        id: 'tcm_NewSibling',
+                        iconCls: 'tcm_NewSibling',
                         menu: {
                             items: [
                                 {
@@ -454,8 +458,8 @@ var treeFilterToolbar = {
                     },
                     {
                         text: 'New Child',
-                        id: 'treeContextMenuNewChildMenuID',
-                        icon: '/images/Old_Images/buttons_small/NewChild.png',
+                        id: 'tcm_NewChild',
+                        iconCls: 'tcm_NewChild',
                         menu: {
                             items: [
                                 {
@@ -482,13 +486,13 @@ var treeFilterToolbar = {
                     {
                         text: 'Expand All Below',
                         id: 'tcm_ExpandAllBelow',
-                        icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                        iconCls: 'tcm_ExpandAllBelow',
                         handler: function () { openRecursive(currentSelectedNode, 5000) }
                     },
                     {
                         text: 'Expand Levels Below',
                         id: 'tcm_ExpandLevelsBelow',
-                        icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                        iconCls: 'tcm_ExpandLevelsBelow',
                         menu: {
                             items: [
                                 {
@@ -597,89 +601,88 @@ var treeFilterToolbar = {
                     {
                         text: 'Collapse All Below',
                         id: 'tcm_CollapseAllBelow',
-                        icon: '/images/Old_Images/buttons_small/CollapseAllBelow.png',
+                        iconCls: 'tcm_CollapseAllBelow',
                         handler: function () { closeRecursive(currentSelectedNode) }
                     }, '-',
                     {
                         text: 'Convert',
                         id: 'tcm_Convert',
-                        icon: '/images/Old_Images/buttons_small/ConvertElementType.png'
+                        iconCls: 'tcm_Convert'
                     }, '-',
                     {
                         text: 'Promote to Functional Area',
                         id: 'tcm_PromoteToFA',
-                        icon: '/images/Old_Images/buttons_small/FeatureToDomain.png'
+                        iconCls: 'tcm_PromoteToFA'
                     },
                     {
                         text: 'Split Requirement',
                         id: 'tcm_SplitR',
-                        icon: '/images/Old_Images/buttons_small/Split.png'
+                        iconCls: 'tcm_SplitR'
                     },
                     {
                         text: 'Create Task from template',
                         id: 'tcm_CreaterTFT',
-                        icon: '/images/Old_Images/buttons_small/Split.png'
+                        iconCls: 'tcm_CreaterTFT'
                     },
                     {
                         text: 'Merger Requirements',
                         id: 'tcm_MergeR',
-                        icon: '/images/Old_Images/buttons_small/MergeFeatures.png'
+                        iconCls: 'tcm_MergeR'
                     }, '-',
                     {
                         text: 'Copy',
                         id: 'tcm_Copy', 
-                        icon: '/images/Old_Images/buttons_small/Copy.png'
-                                            
+                        iconCls: 'tcm_Copy'
                     },
                     {
                         text: 'Paste',
                         id: 'tcm_Paste',
-                        icon: '/images/Old_Images/buttons_small/Paste.png'
+                        iconCls: 'tcm_Paste'
                     },
                     {
                         text: 'Move/Link',
                         id: 'tcm_MoveLink',
-                        icon: '/images/Old_Images/buttons_small/Move.png'
+                        iconCls: 'tcm_MoveLink'
                     },
                     {
                         text: 'Up',
                         id: 'tcm_Up',
-                        icon: '/images/Old_Images/buttons_small/MoveUp.png'
+                        iconCls: 'tcm_Up'
                     },
                     {
                         text: 'Down',
                         id: 'tcm_Down',
-                        icon: '/images/Old_Images/buttons_small/MoveDown.png'
+                        iconCls: 'tcm_Down'
                     },
                     {
                         text: 'Unlink',
                         id: 'tcm_Unlink',
-                        icon: '/images/Old_Images/buttons_small/Unlink.png'
+                        iconCls: 'tcm_Unlink'
                     },
                     {
                         text: 'Delete',
                         id: 'tcm_Delete',
-                        icon: '/images/Old_Images/buttons_small/Delete.png'
+                        iconCls: 'tcm_Delete'
                     }, '-',
                     {
                         text: 'Copy Link',
                         id: 'tcm_CopyLink',
-                        icon: '/images/Old_Images/buttons_small/CopyLink.png'
+                        iconCls: 'tcm_CopyLink'
                     }, '-',
                     {
                         text: 'Update Additional Properties',
                         id: 'tcm_UpdateAP',
-                        icon: '/images/Old_Images/buttons_small/ExpandAll.png'
+                        iconCls: 'tcm_UpdateAP'
                     },
                     {
                         text: 'Enter Resource Estimation',
                         id: 'tcm_EnterRE',
-                        icon: '/images/Old_Images/buttons_small/MultiRequEst.png'
+                        iconCls: 'tcm_EnterRE'
                     }, '-',
                     {
                         text: 'Create Bookmark',
                         id: 'tcm_bookmark',
-                        icon: '/images/Old_Images/buttons_small/Bookmark.png'
+                        iconCls: 'tcm_bookmark'
                     }
                 ]
             });

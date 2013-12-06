@@ -380,6 +380,190 @@
     color:White !important;
 }
 
+.tcm_View
+{
+    background-image: url(/images/Old_Images/buttons_small/View.png);
+}
+.tcm_View-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/ViewDis.png);
+}
+.tcm_ViewSelectedFolder
+{
+    background-image: url(/images/Old_Images/buttons_small/Filter.png);
+}
+.tcm_ViewSelectedFolder-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/Filter_Dis.png);
+}
+.tcm_NewSibling
+{
+    background-image: url(/images/Old_Images/buttons_small/NewSibling.png);
+}
+.tcm_NewSibling-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/NewSiblingDis.png);
+}
+.tcm_NewChild
+{
+    background-image: url(/images/Old_Images/buttons_small/NewChild.png);
+}
+.tcm_NewChild-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/NewChildDis.png);
+}
+.tcm_ExpandAllBelow
+{
+    background-image: url(/images/Old_Images/buttons_small/ExpandAll.png);
+}
+.tcm_ExpandAllBelow-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/ExpandAll_Dis.png);
+}
+.tcm_ExpandLevelsBelow
+{
+    background-image: url(/images/Old_Images/buttons_small/ExpandAll.png);
+}
+.tcm_ExpandLevelsBelow-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/ExpandAll_Dis.png);
+}
+.tcm_CollapseAllBelow
+{
+    background-image: url(/images/Old_Images/buttons_small/CollapseAllBelow.png);
+}
+.tcm_CollapseAllBelow-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/CollapseAllBelow.png);
+}
+.tcm_Convert
+{
+    background-image: url(/images/Old_Images/buttons_small/ConvertElementType.png);
+}
+.tcm_Convert-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/ConvertElementType_Dis.png);
+}
+.tcm_PromoteToFA
+{
+    background-image: url(/images/Old_Images/buttons_small/FeatureToDomain.png);
+}
+.tcm_PromoteToFA-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/FeatureToDomainDis.png);
+}
+.tcm_SplitR
+{
+    background-image: url(/images/Old_Images/buttons_small/Split.png);
+}
+.tcm_SplitR-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/SplitDis.png);
+}
+.tcm_CreaterTFT
+{
+    background-image: url(/images/Old_Images/buttons_small/Split.png);
+}
+.tcm_CreaterTFT-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/SplitDis.png);
+}
+.tcm_MergeR
+{
+    background-image: url(/images/Old_Images/buttons_small/MergeFeatures.png);
+}
+.tcm_MergeR-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/MergeFeatures_Dis.png);
+}
+.tcm_Copy
+{
+    background-image: url(/images/Old_Images/buttons_small/Clone.png);
+}
+.tcm_Copy-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/Clone_dis.png);
+}
+.tcm_Paste
+{
+    background-image: url(/images/Old_Images/buttons_small/Paste.png);
+}
+.tcm_Paste-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/Paste_Dis.png);
+}
+.tcm_MoveLink
+{
+    background-image: url(/images/Old_Images/buttons_small/Move.png);
+}
+.tcm_MoveLink-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/MoveDis.png);
+}
+.tcm_Up
+{
+    background-image: url(/images/Old_Images/buttons_small/MoveUp.png);
+}
+.tcm_Up-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/MoveUpDis.png);
+}
+.tcm_Down
+{
+    background-image: url(/images/Old_Images/buttons_small/MoveDown.png);
+}
+.tcm_Down-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/MoveDownDis.png);
+}
+.tcm_Unlink
+{
+    background-image: url(/images/Old_Images/buttons_small/Unlink.png);
+}
+.tcm_Unlink-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/UnlinkDis.png);
+}
+.tcm_Delete
+{
+    background-image: url(/images/Old_Images/buttons_small/Delete.png);
+}
+.tcm_Delete-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/DeleteDis.png);
+}
+.tcm_CopyLink
+{
+    background-image: url(/images/Old_Images/buttons_small/CopyLink.png);
+}
+.tcm_CopyLink-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/CopyLink_Dis.png);
+}
+.tcm_UpdateAP
+{
+    background-image: url(/images/Old_Images/buttons_small/ExpandAll.png);
+}
+.tcm_UpdateAP-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/ExpandAll_Dis.png);
+}
+.tcm_EnterRE
+{
+    background-image: url(/images/Old_Images/buttons_small/MultiRequEst.png);
+}
+.tcm_EnterRE-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/MultiRequEst_Dis.png);
+}
+.tcm_bookmark
+{
+    background-image: url(/images/Old_Images/buttons_small/Bookmark.png);
+}
+.tcm_bookmark-Dis
+{
+    background-image: url(/images/Old_Images/buttons_small/Bookmark_Dis.png);
+}
 /* Start - This is for changing collapsible css for whole application*/
 .x-border-layout-ct
 {
