@@ -418,29 +418,35 @@ var treeFilterToolbar = {
                 items: [
                     {
                         text: 'View',
-                        id: 'tcm_View'
+                        id: 'tcm_View',
+                        icon: '/images/Old_Images/buttons_small/View.png'
                     },
                     {
                         text: 'View Selected Folder',
-                        id: 'tcm_ViewSelectedFolder'
+                        id: 'tcm_ViewSelectedFolder',
+                        icon: '/images/Old_Images/buttons_small/Filter.png'
                     },'-',
                     {
                         text: 'New Sibling',
+                        icon: '/images/Old_Images/buttons_small/NewSibling.png',
                         menu: {
                             items: [
                                 {
                                     text: 'Folder',
                                     id: 'tcm_Sibling_Folder',
+                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                                     handler: createSiblingNode
                                 },
                                 {
                                     text: 'Functional Area',
                                     id: 'tcm_Sibling_FunctionalArea',
+                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                                     handler: createSiblingNode
                                 },
                                 {
                                     text: 'Requirement (S)',
                                     id: 'tcm_Sibling_Requirement',
+                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                                     handler: createSiblingNode
                                 }
                             ]
@@ -449,21 +455,25 @@ var treeFilterToolbar = {
                     {
                         text: 'New Child',
                         id: 'treeContextMenuNewChildMenuID',
+                        icon: '/images/Old_Images/buttons_small/NewChild.png',
                         menu: {
                             items: [
                                 {
                                     text: 'Folder',
                                     id: 'tcm_Child_Folder',
+                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                                     handler: createChildNode
                                 },
                                 {
                                     text: 'Functional Area',
                                     id: 'tcm_Child_FunctionalArea',
+                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                                     handler: createChildNode
                                 },
                                 {
                                     text: 'Requirement (C)',
                                     id: 'tcm_Child_Requirement',
+                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                                     handler: createChildNode
                                 }
                             ]
@@ -472,11 +482,13 @@ var treeFilterToolbar = {
                     {
                         text: 'Expand All Below',
                         id: 'tcm_ExpandAllBelow',
+                        icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                         handler: function () { openRecursive(currentSelectedNode, 5000) }
                     },
                     {
                         text: 'Expand Levels Below',
                         id: 'tcm_ExpandLevelsBelow',
+                        icon: '/images/Old_Images/buttons_small/ExpandAll.png',
                         menu: {
                             items: [
                                 {
@@ -585,71 +597,89 @@ var treeFilterToolbar = {
                     {
                         text: 'Collapse All Below',
                         id: 'tcm_CollapseAllBelow',
+                        icon: '/images/Old_Images/buttons_small/CollapseAllBelow.png',
                         handler: function () { closeRecursive(currentSelectedNode) }
                     }, '-',
                     {
                         text: 'Convert',
-                        id: 'tcm_Convert'
+                        id: 'tcm_Convert',
+                        icon: '/images/Old_Images/buttons_small/ConvertElementType.png'
                     }, '-',
-//                    {
-//                        text: 'Promote to Functional Area',
-//                        id: 'tcm_PromoteToFA'
-//                    },
-//                    {
-//                        text: 'Split Requirement',
-//                        id: 'tcm_SplitR'
-//                    },
-//                    {
-//                        text: 'Create Task from template',
-//                        id: 'tcm_CreaterTFT'
-//                    },
-//                    {
-//                        text: 'Merger Requirements',
-//                        id: 'tcm_MergeR'
-//                    }, '-',
+                    {
+                        text: 'Promote to Functional Area',
+                        id: 'tcm_PromoteToFA',
+                        icon: '/images/Old_Images/buttons_small/FeatureToDomain.png'
+                    },
+                    {
+                        text: 'Split Requirement',
+                        id: 'tcm_SplitR',
+                        icon: '/images/Old_Images/buttons_small/Split.png'
+                    },
+                    {
+                        text: 'Create Task from template',
+                        id: 'tcm_CreaterTFT',
+                        icon: '/images/Old_Images/buttons_small/Split.png'
+                    },
+                    {
+                        text: 'Merger Requirements',
+                        id: 'tcm_MergeR',
+                        icon: '/images/Old_Images/buttons_small/MergeFeatures.png'
+                    }, '-',
                     {
                         text: 'Copy',
-                        id: 'tcm_Copy' 
+                        id: 'tcm_Copy', 
+                        icon: '/images/Old_Images/buttons_small/Copy.png'
+                                            
                     },
                     {
                         text: 'Paste',
-                        id: 'tcm_Paste'
+                        id: 'tcm_Paste',
+                        icon: '/images/Old_Images/buttons_small/Paste.png'
                     },
                     {
                         text: 'Move/Link',
-                        id: 'tcm_MoveLink'
+                        id: 'tcm_MoveLink',
+                        icon: '/images/Old_Images/buttons_small/Move.png'
                     },
                     {
                         text: 'Up',
-                        id: 'tcm_Up'
+                        id: 'tcm_Up',
+                        icon: '/images/Old_Images/buttons_small/MoveUp.png'
                     },
                     {
                         text: 'Down',
-                        id: 'tcm_Down'
+                        id: 'tcm_Down',
+                        icon: '/images/Old_Images/buttons_small/MoveDown.png'
                     },
                     {
                         text: 'Unlink',
-                        id: 'tcm_Unlink'
+                        id: 'tcm_Unlink',
+                        icon: '/images/Old_Images/buttons_small/Unlink.png'
                     },
                     {
                         text: 'Delete',
-                        id: 'tcm_Delete'
+                        id: 'tcm_Delete',
+                        icon: '/images/Old_Images/buttons_small/Delete.png'
                     }, '-',
                     {
                         text: 'Copy Link',
-                        id: 'tcm_CopyLink'
+                        id: 'tcm_CopyLink',
+                        icon: '/images/Old_Images/buttons_small/CopyLink.png'
                     }, '-',
                     {
                         text: 'Update Additional Properties',
-                        id: 'tcm_UpdateAP'
+                        id: 'tcm_UpdateAP',
+                        icon: '/images/Old_Images/buttons_small/ExpandAll.png'
                     },
                     {
                         text: 'Enter Resource Estimation',
-                        id: 'tcm_EnterRE'
+                        id: 'tcm_EnterRE',
+                        icon: '/images/Old_Images/buttons_small/MultiRequEst.png'
                     }, '-',
                     {
                         text: 'Create Bookmark',
-                        id: 'tcm_bookmark'
+                        id: 'tcm_bookmark',
+                        icon: '/images/Old_Images/buttons_small/Bookmark.png'
                     }
                 ]
             });
