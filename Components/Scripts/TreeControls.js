@@ -176,46 +176,6 @@ var treeFilterToolbar = {
         ]
 };
 
-
-//Ext.define('TreeGridPanelModel', {
-//    extend: 'Ext.data.Model',
-//    fields: [
-//        { name: 'task', type: 'string' },
-//        { name: 'user', type: 'string' },
-//        { name: 'duration', type: 'string' },
-//        { name: 'name', type: 'string' },
-//        { name: 'internalID', type: 'string' },
-//        { name: 'availableProperties', type: 'string' },
-//        { name: 'completed', type: 'string' },
-//        { name: 'assignedTo', type: 'string' },
-//        { name: 'basedOnIdea', type: 'string' },
-//        { name: 'briefDescription', type: 'string' },
-//        { name: 'creationDate', type: 'string' },
-//        { name: 'estimationConfidence', type: 'string' },
-//        { name: 'lastUpdatedDate', type: 'string' },
-//        { name: 'lifecycle', type: 'string' },
-//        { name: 'planPriority', type: 'string' },
-//        { name: 'priority', type: 'string' },
-//        { name: 'release', type: 'string' },
-//        { name: 'remainingWork', type: 'string' },
-//        { name: 'resourceCost', type: 'string' },
-//        { name: 'resourceDemand', type: 'string' },
-//        { name: 'rollup', type: 'string' },
-//        { name: 'sn', type: 'string' },
-//        { name: 'team', type: 'string' },
-//        { name: 'nodeType', type: 'string' }
-//    ]
-//});
-
-//var store1 = Ext.create('Ext.data.TreeStore', {
-//    model: 'TreeGridPanelModel',
-//    proxy: {
-//        type: 'ajax',
-//        url: 'Data/treegrid.json'
-//    },
-//    folderSort: true
-//});
-
             Ext.define('TreeControlModel', {
                 extend: 'Ext.data.Model',
                 fields: [
@@ -250,9 +210,31 @@ var treeFilterToolbar = {
                     url: '/Data/treegrid.json'
                 },
                 autoLoad: true,
-                folderSort: true
+                folderSort: true,
+                listeners: {
+                    load: function (me, records, successful, operation, eOpts) {
+                        decoratedNode(records);
+                    }
+                }
             });
 
+            function decoratedNode(node) {
+                var ch = node.childNodes;
+                if (ch.length > 0) {
+                    Ext.Array.each(ch, function (c) {
+                        decoratedNode(c);
+                    });
+                } else {
+                    node.data.leaf = true;
+                }
+                if (node.data.nodeType === 'folder') {
+                    node.data.iconCls = 'treeNode_Folder';
+                }else if (node.data.nodeType === 'requirements') {
+                    node.data.iconCls = 'treeNode_Requirements';
+                } else if (node.data.nodeType === 'functionalArea') {
+                    node.data.iconCls = 'treeNode_FunctionalArea';
+                }
+            }
             var treeGridPanle = new Ext.tree.TreePanel({
                 id: 'myTreeControlPanel',
                 //title: 'Core Team Projects',
@@ -322,7 +304,6 @@ var treeFilterToolbar = {
                     itemclick: function (view, node, item, index, e, eOpts) {
                         Ext.getCmp('tabsHeaderInfoDisplayID').setText(node.data.nodeType + ' - ' + node.data.name);
                     }
-
                 }
             });
 
@@ -365,20 +346,24 @@ var treeFilterToolbar = {
                 // Ext.getCmp('myTreePanel').columns[1].hide = true;
                 //                treePanel1.columns.Add(durationColumn);
             }
-
+           
             var currentSelectedNode = null;
             function createChildNode(item) {
+                currentSelectedNode.data.leaf = false;
                 if (item.text === 'Folder') {
                     currentSelectedNode.appendChild({
                         name: 'New Folder Node',
                         completed: 3,
+                        iconCls: 'treeNode_Folder',
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
-                        nodeType: 'folder'
+                        nodeType: 'folder',
+                        leaf: true
                     });
                 } else if (item.text === 'Requirement (C)') {
                     currentSelectedNode.appendChild({
                         name: 'New Requirement (C)',
                         completed: 3,
+                        iconCls: 'treeNode_Requirements',
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
                         nodeType: 'requirements',
                         leaf: true
@@ -387,8 +372,10 @@ var treeFilterToolbar = {
                     currentSelectedNode.appendChild({
                         name: 'Added Functional Area',
                         completed: 3,
+                        iconCls: 'treeNode_FunctionalArea',
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
-                        nodeType: 'functionalArea'
+                        nodeType: 'functionalArea',
+                        leaf: true
                     });
                 }
             }
@@ -398,13 +385,16 @@ var treeFilterToolbar = {
                     currentSelectedNode.parentNode.appendChild({
                         name: 'New Folder Node',
                         completed: 3,
+                        iconCls: 'treeNode_Folder',
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
-                        nodeType: 'folder'
+                        nodeType: 'folder',
+                        leaf: true
                     });
                 } else if (item.text === 'Requirement (S)') {
                     currentSelectedNode.parentNode.appendChild({
                         name: 'New Requirement (S)',
                         completed: 3,
+                        iconCls: 'treeNode_Requirements',
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
                         nodeType: 'requirements',
                         leaf: true
@@ -413,8 +403,10 @@ var treeFilterToolbar = {
                     currentSelectedNode.parentNode.appendChild({
                         name: 'Added Function Area',
                         completed: 3,
+                        iconCls: 'treeNode_FunctionalArea',
                         assignedTo: currentSelectedNode.data.name + '_Pihu',
-                        nodeType: 'functionalArea'
+                        nodeType: 'functionalArea',
+                        leaf: true
                     });
                 }
             }

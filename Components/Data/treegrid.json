@@ -51,7 +51,7 @@
                 name:'Paint bedroom',
                 completed: 2.75,
                 assignedTo:'Anaya',
-                nodeType:'folder',
+                nodeType:'functionalArea',
                 children: [{
                     name: 'Ceiling',
                     completed: 1.25,

@@ -564,6 +564,21 @@
 {
     background-image: url(/images/Old_Images/buttons_small/Bookmark_Dis.png);
 }
+.treeNode_Folder
+{
+    background-image: url(/images/tree_folder.png) !important;
+    background-repeat: no-repeat;
+}
+.treeNode_Requirements
+{
+    background-image: url(/images/file.png) !important;
+    background-repeat: no-repeat;
+}
+.treeNode_FunctionalArea
+{
+    background-image: url(/images/requirement.png) !important;
+    background-repeat: no-repeat;
+}
 /* Start - This is for changing collapsible css for whole application*/
 .x-border-layout-ct
 {
