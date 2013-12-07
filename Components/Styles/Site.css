@@ -568,16 +568,19 @@
 {
     background-image: url(/images/tree_folder.png) !important;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .treeNode_Requirements
 {
     background-image: url(/images/file.png) !important;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .treeNode_FunctionalArea
 {
     background-image: url(/images/requirement.png) !important;
     background-repeat: no-repeat;
+    background-position: center;
 }
 /* Start - This is for changing collapsible css for whole application*/
 .x-border-layout-ct

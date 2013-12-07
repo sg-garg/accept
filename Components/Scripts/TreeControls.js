@@ -349,7 +349,6 @@ var treeFilterToolbar = {
            
             var currentSelectedNode = null;
             function createChildNode(item) {
-                currentSelectedNode.data.leaf = false;
                 if (item.text === 'Folder') {
                     currentSelectedNode.appendChild({
                         name: 'New Folder Node',
@@ -378,6 +377,8 @@ var treeFilterToolbar = {
                         leaf: true
                     });
                 }
+                currentSelectedNode.data.leaf = false;
+                currentSelectedNode.expand();
             }
 
             function createSiblingNode(item) {
