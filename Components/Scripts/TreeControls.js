@@ -327,8 +327,10 @@ var treeFilterToolbar = {
             });
 
             function hideShowMenuForSelectedNode(record) {
-                
+
                 Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(false);
+                Ext.getCmp('tcm_ViewSelectedFolder').setIconCls('tcm_ViewSelectedFolder');
+
                 Ext.getCmp('tcm_Sibling_Requirement').setVisible(true);
                 Ext.getCmp('tcm_Sibling_Folder').setVisible(true);
                 Ext.getCmp('tcm_Sibling_FunctionalArea').setVisible(true);
@@ -342,7 +344,7 @@ var treeFilterToolbar = {
                     Ext.getCmp('tcm_Child_FunctionalArea').setVisible(false);
                     Ext.getCmp('tcm_Child_Requirement').setVisible(false);
                     Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(true);
-//                    Ext.getCmp('tcm_View').setIconCls('tcm_View-Dis');
+                    Ext.getCmp('tcm_ViewSelectedFolder').setIconCls('tcm_ViewSelectedFolder-Dis');
                 } else if (record.data.nodeType === 'folder') {
                     Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
                     Ext.getCmp('tcm_Child_Requirement').setVisible(false);
@@ -350,7 +352,7 @@ var treeFilterToolbar = {
                     Ext.getCmp('tcm_Sibling_Requirement').setVisible(false);
                     Ext.getCmp('tcm_Child_Folder').setVisible(false);
                     Ext.getCmp('tcm_ViewSelectedFolder').setDisabled(true);
-                    Ext.getCmp('tcm_ViewSelectedFolder').icon = '/images/Old_Images/buttons_small/Filter_dis.png';
+                    Ext.getCmp('tcm_ViewSelectedFolder').setIconCls('tcm_ViewSelectedFolder-Dis');
                 }
             }
             function hideTreeColumn() {
@@ -438,19 +440,19 @@ var treeFilterToolbar = {
                                 {
                                     text: 'Folder',
                                     id: 'tcm_Sibling_Folder',
-                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                                    icon: '/images/Old_Images/entities/Folder_menu.png',
                                     handler: createSiblingNode
                                 },
                                 {
                                     text: 'Functional Area',
                                     id: 'tcm_Sibling_FunctionalArea',
-                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                                    icon: '/images/Old_Images/entities/ProductDomain_menu.png',
                                     handler: createSiblingNode
                                 },
                                 {
                                     text: 'Requirement (S)',
                                     id: 'tcm_Sibling_Requirement',
-                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                                    icon: '/images/Old_Images/entities/Feature_menu.png',
                                     handler: createSiblingNode
                                 }
                             ]
@@ -465,19 +467,19 @@ var treeFilterToolbar = {
                                 {
                                     text: 'Folder',
                                     id: 'tcm_Child_Folder',
-                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                                    icon: '/images/Old_Images/entities/Folder_menu.png',
                                     handler: createChildNode
                                 },
                                 {
                                     text: 'Functional Area',
                                     id: 'tcm_Child_FunctionalArea',
-                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                                    icon: '/images/Old_Images/entities/ProductDomain_menu.png',
                                     handler: createChildNode
                                 },
                                 {
                                     text: 'Requirement (C)',
                                     id: 'tcm_Child_Requirement',
-                                    icon: '/images/Old_Images/buttons_small/ExpandAll.png',
+                                    icon: '/images/Old_Images/entities/Feature_menu.png',
                                     handler: createChildNode
                                 }
                             ]
@@ -609,26 +611,26 @@ var treeFilterToolbar = {
                         id: 'tcm_Convert',
                         iconCls: 'tcm_Convert'
                     }, '-',
-                    {
-                        text: 'Promote to Functional Area',
-                        id: 'tcm_PromoteToFA',
-                        iconCls: 'tcm_PromoteToFA'
-                    },
-                    {
-                        text: 'Split Requirement',
-                        id: 'tcm_SplitR',
-                        iconCls: 'tcm_SplitR'
-                    },
-                    {
-                        text: 'Create Task from template',
-                        id: 'tcm_CreaterTFT',
-                        iconCls: 'tcm_CreaterTFT'
-                    },
-                    {
-                        text: 'Merger Requirements',
-                        id: 'tcm_MergeR',
-                        iconCls: 'tcm_MergeR'
-                    }, '-',
+//                    {
+//                        text: 'Promote to Functional Area',
+//                        id: 'tcm_PromoteToFA',
+//                        iconCls: 'tcm_PromoteToFA'
+//                    },
+//                    {
+//                        text: 'Split Requirement',
+//                        id: 'tcm_SplitR',
+//                        iconCls: 'tcm_SplitR'
+//                    },
+//                    {
+//                        text: 'Create Task from template',
+//                        id: 'tcm_CreaterTFT',
+//                        iconCls: 'tcm_CreaterTFT'
+//                    },
+//                    {
+//                        text: 'Merger Requirements',
+//                        id: 'tcm_MergeR',
+//                        iconCls: 'tcm_MergeR'
+//                    }, '-',
                     {
                         text: 'Copy',
                         id: 'tcm_Copy', 
