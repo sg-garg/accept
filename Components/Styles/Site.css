@@ -58,6 +58,7 @@
 .folderTreeSplitButtonCSS{
     background-position: center center;
     background-image: url(\/images\/folder-icon.png) !important;
+    background-repeat:no-repeat;
     background-color:#cac9c9 !important;
     border-color:#999999 !important;
     border-radius:0px !important;
@@ -68,10 +69,12 @@
 .folderTreeSplitButtonCSS.x-btn-over
 {
     background-color:#efefef !important;
+    background-repeat:no-repeat;
 }
 .displayTreeSplitButtonCSS{
     background-position: center center;
     background-image: url(\/images\/hierarchy-icon.png) !important;
+    background-repeat:no-repeat;
     background-color:#cac9c9 !important;
     border-color:#999999 !important;
     border-radius:0px !important;
@@ -82,10 +85,12 @@
 .displayTreeSplitButtonCSS.x-btn-over
 {
     background-color:#efefef !important;
+    background-repeat:no-repeat;
 }
 .filterTreeSplitButtonCSS{
     background-position: center center;
     background-image: url(\/images\/filter-icon.png) !important;
+    background-repeat:no-repeat;
     background-color:#cac9c9 !important;
     border-color:#999999 !important;
     border-radius:0px !important;
@@ -96,10 +101,12 @@
 .filterTreeSplitButtonCSS.x-btn-over
 {
     background-color:#efefef !important;
+    background-repeat:no-repeat;
 }
 .collapseTreeButtonCSS{
     background-position: center center;
     background-image: url(\/images\/expand_arrow.png) !important;
+    background-repeat:no-repeat;
     background-color:#cac9c9 !important;
     border-color:#999999 !important;
     border-radius:0px !important;
@@ -110,11 +117,13 @@
 {
     background-color:#efefef !important;
     background-image: url(\/images\/expand_arrow_arrow.png) !important;
+    background-repeat:no-repeat;
 }
 
 .propertiesGeneralBtn
 {
     background-image: url(\/images\/india_gen_properties.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -130,6 +139,7 @@
 .propertiesGeneralBtnSelected
 {
     background-image: url(\/images\/india_gen_properties_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
 }
 .propertiesGeneralBtnSelected.x-btn-over
@@ -140,6 +150,7 @@
 .attachementsGeneralBtn
 {
     background-image: url(\/images\/india_gen_attach.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -156,6 +167,7 @@
 .attachementsGeneralBtnSelected
 {
     background-image: url(\/images\/india_gen_attach_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
 }
 .attachementsGeneralBtnSelected.x-btn-over
@@ -166,6 +178,7 @@
 .notesNDiscussionsGeneralBtn
 {
     background-image: url(\/images\/india_gen_NnD.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -182,6 +195,7 @@
 .notesNDiscussionsGeneralBtnSelected
 {
     background-image: url(\/images\/india_gen_NnD_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
 }
 .notesNDiscussionsGeneralBtnSelected.x-btn-over
@@ -192,6 +206,7 @@
 .activitiesGeneralBtn
 {
     background-image: url(\/images\/India_gen_activity.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -208,6 +223,7 @@
 .activitiesGeneralBtnSelected
 {
     background-image: url(\/images\/India_gen_activity_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
 }
 .activitiesGeneralBtnSelected.x-btn-over
@@ -218,6 +234,7 @@
 .stackholdersGeneralBtn
 {
     background-image: url(\/images\/India_gen_sh.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -234,6 +251,7 @@
 .stackholdersGeneralBtnSelected
 {
     background-image: url(\/images\/India_gen_sh_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
 }
 .stackholdersGeneralBtnSelected.x-btn-over
@@ -244,6 +262,7 @@
 .revisionsGeneralBtn
 {
     background-image: url(\/images\/India_gen_revision.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -260,6 +279,7 @@
 .revisionsGeneralBtnSelected
 {
     background-image: url(\/images\/India_gen_revision_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
 }
 .revisionsGeneralBtnSelected.x-btn-over
@@ -270,6 +290,7 @@
 .historyGeneralBtn
 {
     background-image: url(\/images\/India_gen_history.png);
+    background-repeat:no-repeat;
     padding:10px 0 10px 24px !important;
     background-position: 5px !important;
     background-color:#cac9c9 !important;
@@ -286,6 +307,7 @@
 .historyGeneralBtnSelected
 {
     background-image: url(\/images\/India_gen_history_sel.png);
+    background-repeat:no-repeat;
     background-color:#ffffff !important;
    
 }
