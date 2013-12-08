@@ -50,7 +50,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BorderLayout.htm" />
+    <Content Include="Requirements.htm" />
     <Content Include="Data\xmlData.xml" />
     <Content Include="extjs-4.2.1\ext-all.js" />
     <Content Include="extjs-4.2.1\resources\css\ext-all.css" />
