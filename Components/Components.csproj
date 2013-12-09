@@ -3382,6 +3382,8 @@
     <Content Include="Elements.htm" />
     <Content Include="Scripts\ContentTab.js" />
     <Content Include="Scripts\customTabPanel.js" />
+    <Content Include="Scripts\filteringTreeView\filteringTreeStore.js" />
+    <Content Include="Scripts\filteringTreeView\filteringTreeView.js" />
     <Content Include="Scripts\General-PropertyTab.js" />
     <Content Include="Scripts\GeneralTab.js" />
     <Content Include="Scripts\IssuesTab.js" />
@@ -3396,6 +3398,7 @@
     <Content Include="Scripts\TreeControls.js" />
     <Content Include="Styles\Site.css" />
     <Content Include="Styles\Site2.css" />
+    <Content Include="TreeGrid.htm" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

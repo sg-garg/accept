@@ -45,28 +45,67 @@ var displayTreeSplitButtonMenu = Ext.create('Ext.menu.Menu', {
             text: 'Hierarchy',
             icon: '\/images\/hierarchy-icon.png',
             handler: function () {
-                console.log('Hierarchy: Clicked');
+                treeGridPanle.store.clearFilter();
             }
         },
         {
             text: 'Hierarchy, no empty folders',
             icon: '\/images\/hierarchy-no-empty-icon.png',
             handler: function () {
-                console.log('Hierarchy, no empty folders: Clicked');
+                treeGridPanle.store.clearFilter(
+                        {
+                            callback: function () {
+                                treeGridPanle.store.filter2(new Ext.util.Filter({
+                                    filterFn: function (item) {
+                                        if (item && item.data && item.data.nodeType == "folder" && item.childNodes && item.childNodes.length === 0) {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                }), '');
+                            }
+                        });
             }
         },
         {
             text: 'Flat, no folders',
             icon: '\/images\/flat-icon.png',
             handler: function () {
-                console.log('Flat, no folders: Clicked');
+                treeGridPanle.store.clearFilter(
+                        {
+                            callback: function () {
+                                treeGridPanle.store.filter2(new Ext.util.Filter({
+                                    filterFn: function (item) {
+                                        if (item && item.data && item.data.nodeType !== 'requirements') {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                }), '');
+                            }
+                        });
             }
         }, 
         {
             text: 'Folders Only',
             icon: '\/images\/folder-icon.png',
             handler: function () {
-                console.log('Folders Only: Clicked');
+                treeGridPanle.store.clearFilter(
+                        {
+                            callback: function () {
+                                treeGridPanle.store.filter(new Ext.util.Filter({
+                                    filterFn: function (item) {
+                                        if (item && item.childNodes && item.childNodes.length === 0) {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                }), '');
+                            }
+                        });
             }
         }
     ]
@@ -203,7 +242,7 @@ var treeFilterToolbar = {
                 ]
             });
 
-            var treeControlStore = Ext.create('Ext.data.TreeStore', {
+            var treeControlStore = Ext.create('filteringTreeStore', {
                 model: 'TreeControlModel',
                 proxy: {
                     type: 'ajax',
@@ -733,7 +772,7 @@ var treeFilterToolbar = {
 
 
 
-            var tabsHeaderInfo1 = {
+            var filterSearchBox = {
                 xtype:'panel',
                 height:32,
                 cls:'searchBackGroundPanel',
@@ -776,4 +815,4 @@ var treeFilterToolbar = {
                 ]
             }
 
-//var tabsHeaderInfo1 = { height: 40, html: 'Put Search Box Here' };
+//var filterSearchBox = { height: 40, html: 'Put Search Box Here' };

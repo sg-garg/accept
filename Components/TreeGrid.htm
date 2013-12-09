@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="extjs-4.2.1/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<script src="extjs-4.2.1/ext-all.js" type="text/javascript"></script>
+<script src="Scripts/filteringTreeView/filteringTreeStore.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        Ext.require(['*']);
+
+        Ext.onReady(function () {
+            Ext.define('MyModel', {
+                extend: 'Ext.data.Model',
+                fields: [
+                    { name: 'task', type: 'string' },
+                    { name: 'user', type: 'string' },
+                    { name: 'duration', type: 'string' }
+                ]
+            });
+
+            var store1 = Ext.create('filteringTreeStore', {
+                model: 'MyModel',
+                proxy: {
+                    type: 'ajax',
+                    url: '/data/treegrid.json'
+                },
+                autoLoad: true,
+                folderSort: true
+            });
+
+            //Ext.ux.tree.TreeGrid is no longer a Ux. You can simply use a tree.TreePanel
+            var treePanel1 = new Ext.tree.TreePanel({
+                id: 'myTreePanel',
+                title: 'Core Team Projects',
+                width: 400,
+                height: 300,
+                renderTo: Ext.getBody(),
+                collapsible: true,
+                useArrows: true,
+                rootVisible: false,
+                store: store1,
+                //multiSelect: true,
+                //singleExpand: true,
+                //the 'columns' property is now 'headers'
+                columns: [
+                    {
+                        xtype: 'treecolumn', //this is so we know which column will show the tree
+                        text: 'Name',
+                        dataIndex: 'task',
+                        flex: 2,
+                        sortable: true
+                    }, {
+                        text: 'Assigned To',
+                        flex: 1,
+                        dataIndex: 'user',
+                        sortable: true
+                    },
+                    {
+                        //  xtype: 'templatecolumn',
+                        text: 'Duration',
+                        flex: 1,
+                        dataIndex: 'duration',
+                        sortable: true
+                    }
+                ]
+            });
+            var menu1 = new Ext.menu.Menu({
+                items: [
+                    {
+                        text: 'New Child',
+                        menu: {
+                            items: [
+                                {
+                                    text: 'New Folder'
+                                },
+                                {
+                                    text: 'New Requirement'
+                                },
+                                {
+                                    text: 'New Category'
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        text: 'Sibling',
+                        menu: {
+                            items: [
+                                {
+                                    text: 'New Folder'
+                                },
+                                {
+                                    text: 'New Requirement'
+                                },
+                                {
+                                    text: 'New Category'
+                                }
+                            ]
+                        }
+                    }, '-',
+                    {
+                        text: 'Expand',
+                        menu: {
+                            items: [
+                                {
+                                    text: 'Level 1'
+                                },
+                                {
+                                    text: 'Level 2'
+                                },
+                                {
+                                    text: 'Level 3'
+                                },
+                                {
+                                    text: 'Level 4'
+                                },
+                                {
+                                    text: 'Level 5'
+                                }
+                            ]
+                        }
+                    }
+                ]
+            });
+            treePanel1.on('itemcontextmenu', function (view, record, item, index, event) {
+                // alert(record.data.task)
+                //treePanel1CurrentNode = record;
+
+
+
+
+
+                record.appendChild({
+                    task: 'New node',
+                    duration: 3,
+                    user: record.data.task + '_Pihu',
+                    leaf: true
+                });
+                //                if (! Ext.getCmp('myTreePanel').columns[1].hidden) {
+                //                    Ext.getCmp('myTreePanel').columns[1].setVisible(false);
+                //                    Ext.getCmp('myTreePanel').setWidth(Ext.getCmp('myTreePanel').getWidth() - 100);
+                //                }
+                // Ext.getCmp('myTreePanel').columns[1].hide = true;
+                //                treePanel1.columns.Add(durationColumn);
+                menu1.showAt(event.getXY());
+                event.stopEvent();
+            }, this);
+
+            Ext.create('Ext.panel.Panel', {
+                layout: 'hbox',
+                items: [
+                {
+                    xtype: 'component',
+                    html: 'Filtering options : '
+                },
+                {
+                    xtype: 'button',
+                    text: 'Heirarchy',
+                    handler: function () {
+                        treePanel1.store.clearFilter();
+                    }
+                },
+                {
+                    xtype: 'button',
+                    text: 'No empty folders',
+                    handler: function () {
+                        treePanel1.store.clearFilter(
+                        {
+                            callback: function () {
+                                treePanel1.store.filter2(new Ext.util.Filter({
+                                    filterFn: function (item) {
+                                        if (item && item.data && item.data.iconCls == "task-folder" && item.childNodes && item.childNodes.length === 0) {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                }), '');
+                            }
+                        });
+                    }
+                },
+                {
+                    xtype: 'button',
+                    text: 'Flat',
+                    handler: function () {
+                        treePanel1.store.clearFilter(
+                        {   
+                            callback : function () {
+                                treePanel1.store.filter2(new Ext.util.Filter({
+                                    filterFn: function (item) {
+                                        if (item && item.childNodes && item.childNodes.length > 0) {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                }), '');
+                            }
+                        });                        
+                    }
+                },
+                {
+                    xtype: 'button',
+                    text: 'Folders only',
+                    handler: function () {
+                        treePanel1.store.clearFilter(
+                        {
+                            callback: function () {
+                                treePanel1.store.filter(new Ext.util.Filter({
+                                    filterFn: function (item) {
+                                        if (item && item.childNodes && item.childNodes.length === 0) {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+                                }), '');
+                            }
+                        });
+                    }
+                }
+                ],
+                renderTo: Ext.getBody()
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
