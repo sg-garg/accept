@@ -2,7 +2,7 @@
     items: [{
         text: 'History Item1',
         icon: '\/extjs\/resources\/themes\/images\/default\/tree\/folder.gif',
-        cls: 'sub_top_nav_T_icon',
+        //cls: 'sub_top_nav_T_icon',
         handler: function () {
             console.log('History Item1 Clicked');
         }

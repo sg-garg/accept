@@ -27,7 +27,6 @@
         Ext.require(['*']);
         Ext.onReady(function () {
             Ext.QuickTips.init();
-
             Ext.create('Ext.Viewport', {
                 layout: {
                     type: 'border'
@@ -36,17 +35,17 @@
                     region: 'north',
                     height: 66,
                     layout: {
-                        type : 'vbox',
-                        align : 'stretch',
-                        pack  : 'start'
+                        type: 'vbox',
+                        align: 'stretch',
+                        pack: 'start'
                     },
                     items: [
                         {
-                            flex:1,
+                            flex: 1,
                             dockedItems: [topMenuBar]
                         },
                         {
-                            flex:1,
+                            flex: 1,
                             dockedItems: [topSubToolBar]
                         }
                     ]
@@ -58,7 +57,7 @@
                     hideCollapseTool: true,
                     width: '23%',
                     layout: 'border',
-                    id:'leftPanelTree',
+                    id: 'leftPanelTree',
                     border: true,
                     items: [{
                         region: 'center',
@@ -81,18 +80,22 @@
                         region: 'center',
                         layout: {
                             type: 'vbox',
-                            align : 'stretch',
-                            pack  : 'start'
+                            align: 'stretch',
+                            pack: 'start'
                         },
-                        items:[
+                        items: [
                             tabsHeaderInfoDisplay,
                             tabsBar
-                        ] 
+                        ]
                     }]
                 }]
             });
+            initRequirementsComponents();
         });
-    
+
+        function initRequirementsComponents() {
+              Ext.fly('propertiesGeneralBtnID').addCls('propertiesGeneralBtnSelected');
+        }
     </script>
 </head>
 <body>

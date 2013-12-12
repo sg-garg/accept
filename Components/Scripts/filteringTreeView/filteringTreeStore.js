@@ -3,7 +3,6 @@ Ext.define('filteringTreeStore', {
     xtype: 'filteringTreeStore',
     extend: 'Ext.data.TreeStore',
     hasFilter: false,
-
     filter: function (filters, value) {
 
         if (Ext.isString(filters)) {
@@ -12,16 +11,16 @@ Ext.define('filteringTreeStore', {
                 value: value
             };
         }
-
         var me = this,
             decoded = me.decodeFilters(filters),
             i = 0,
             length = decoded.length,
             out = [];
-
+        
         for (; i < length; i++) {
             me.filters.replace(decoded[i]);
         }
+
 
         //store all nodes to be removed in out array
         Ext.Array.each(me.filters.items, function (filter) {
@@ -44,16 +43,13 @@ Ext.define('filteringTreeStore', {
         }
 
         me.hasFilter = true;
-
-        console.log(me);
     },
 
     clearFilter: function (callback) {
         var me = this;
-        
         me.filters.clear();
         me.hasFilter = false;
-        me.load(callback);        
+        me.load(callback);
     },
 
     isFiltered: function () {
@@ -85,23 +81,22 @@ Ext.define('filteringTreeStore', {
 
         me.hasFilter = true;
 
-        console.log(me);
 
         /* recursive function that removes and reparent children 
-         * Ex. Consider a tree
-         *                1
-         *          2          3
-         *       4     5     6    7
-         *     8 9 10
-         *
-         *  After deleting node 4, tree should look as follow   
-         *                1
-         *          2           3
-         *       8 9 10 5    6    7         
-         *
+        * Ex. Consider a tree
+        *                1
+        *          2          3
+        *       4     5     6    7
+        *     8 9 10
+        *
+        *  After deleting node 4, tree should look as follow   
+        *                1
+        *          2           3
+        *       8 9 10 5    6    7         
+        *
         */
         function remove2(tree, node, parent, parentloc, filterFn) {
-            
+
             var i, out;
             if (node) {
                 if (node.childNodes && node.childNodes.length > 0) {
