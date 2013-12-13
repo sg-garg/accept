@@ -19,6 +19,8 @@
 });
 var copyLinkButton = Ext.create('Ext.button.Split', {
     text: 'Copy Link',
+    cls:'generalTabSubToolbarMenuButtonCSS',
+    height:30,
     icon: '\/images\/copy-link-icon.png',
     handler: function () {
         console.log('Copy Link Handler');
@@ -58,6 +60,8 @@ var relationshipsButtonMenu = Ext.create('Ext.menu.Menu', {
 });
 var relationshipsButton = Ext.create('Ext.button.Split', {
     text: 'Relationships: 1',
+    cls:'generalTabSubToolbarMenuButtonCSS',
+    height:30,
     icon: '\/images\/relations_icon.png',
     handler: function () {
         console.log('Relationships: 1 Handler');
@@ -76,13 +80,15 @@ relationshipsButton.on({
 });
 var generalSubToolbar = {
         xtype: 'toolbar',
-        height: 30,
+        style:'background: #d6d5d5; border: 1px solid #999999; padding:0px;',
         dock: 'top',
         items: [
             copyLinkButton,
             relationshipsButton,
             {
                 text: 'Dependencies: None',
+                cls:'generalTabSubToolbarMenuButtonCSS',
+                height:30,
                 icon: '\/images\/dependencies_icon.png',
                 handler: function () {
                     console.log('Dependencies: None icon clicked');
@@ -90,6 +96,8 @@ var generalSubToolbar = {
             },
             {
                 text: 'Tasks: None',
+                cls:'generalTabSubToolbarMenuButtonCSS',
+                height:30,
                 icon: '\/images\/task_link_icon.png',
                 handler: function () {
                     console.log('Tasks: None icon clicked');

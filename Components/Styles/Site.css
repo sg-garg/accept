@@ -55,6 +55,32 @@
     padding:3px 0 5px 5Px;
     text-transform:capitalize;
 }
+.generalTabSubToolbarMenuButtonCSS
+{
+    margin:0px !important;
+    border:1px solid #d6d5d5 !important;
+    padding:0px;
+    padding-left:10px !important;
+    border-radius:0px !important;
+}
+.generalTabSubToolbarMenuButtonCSS.x-btn-over
+{
+    background:#efefef !important;
+    border-left:1px solid #999999 !important;
+    border-right:1px solid #999999 !important;
+}
+.generalTabSubToolbarMenuButtonCSS.x-btn-over .x-btn-split-right
+{
+    background-image: url('/extjs/resources/themes/images/default/button/s-arrow-noline.gif') !important;
+}
+
+.generalTabSubToolbarMenuButtonCSS.x-btn-default-toolbar-small-menu-active
+{
+    background:#efefef !important;
+    border-left:1px solid #999999 !important;
+    border-right:1px solid #999999 !important;
+    
+}
 .folderTreeSplitButtonCSS{
     background-position: center center;
     background-image: url(\/images\/folder-icon.png) !important;

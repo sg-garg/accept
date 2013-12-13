@@ -11,7 +11,7 @@
             items: [
                 {
                     region: 'north',
-                    height: 30,
+                    height: 32,
                     dockedItems: [generalSubToolbar]
                 },
                 {
