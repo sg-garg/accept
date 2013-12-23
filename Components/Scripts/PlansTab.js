@@ -46,7 +46,68 @@ var planAdditionalReleaseSubToolbar = {
     xtype: 'toolbar',
     dock: 'top',
     items: [
-        {
+        
+    ]
+};
+
+var planScenariosReleaseSubToolbar = {
+        xtype: 'toolbar',
+        dock: 'top',
+        items: [
+        
+    ]
+};
+
+
+
+
+
+Ext.define('addionalPlansModel',{
+        extend: 'Ext.data.Model',
+        fields: [
+            // set up the fields mapping into the xml doc
+            
+            {name: 'Name', mapping: '@ac-NAME'},
+			{name: 'PlanPriority', mapping: '@ac-PLAN_PRIORITY'},
+			{name: 'Lifecycle', mapping: '@ac-PLAN_LIFECYCLE'},
+			{name: 'AssignedTo', mapping: '@ac-OWNER_NAME'}
+            
+        ]
+    });
+
+    // create the Data Store
+    var addionalPlansstore = Ext.create('Ext.data.Store', {
+        model: 'addionalPlansModel',
+        autoLoad: true,
+        proxy: {
+            // load using HTTP
+            type: 'ajax',
+            url: '/Data/PlansSampleData-1.xml',
+            // the return will be XML, so lets set up a reader
+            reader: {
+                type: 'xml',
+                // records will have an "Item" tag
+				
+                record: 'Description',
+                idProperty: '@ac-ID'
+            }
+        }
+    });
+
+    // create the grid
+    var planAdditionalReleaseGrid = Ext.create('Ext.grid.Panel', 
+		
+		{	
+        xtype: 'gridpanel',
+		store: addionalPlansstore,
+        columns: [
+            {text: "Name", flex: 1, dataIndex: 'Name', sortable: true},
+            {text: "Plan Priority", width: 180, dataIndex: 'PlanPriority', sortable: true},
+            {text: "Lifecycle", width: 115, dataIndex: 'Lifecycle', sortable: true},
+            {text: "Assigned to", width: 100, dataIndex: 'AssignedTo', sortable: true}
+        ],
+		 tbar: [
+			{
             text: 'Add',
             icon: '\/images\/add-icon.png',
             handler: function () {
@@ -126,14 +187,60 @@ var planAdditionalReleaseSubToolbar = {
                 Ext.getCmp('btnNavigate').disable();
             }
         }
-    ]
-};
+		]
+		
+		
+       // renderTo:'plans-grid-1',
+        //width: 540,
+        //height: 200
+    });
+//});
 
-var planScenariosReleaseSubToolbar = {
-        xtype: 'toolbar',
-        dock: 'top',
-        items: [
-        {
+
+//Scenarios Containing this requirement grid
+    Ext.define('scenariosPlanModel',{
+        extend: 'Ext.data.Model',
+        fields: [
+            // set up the fields mapping into the xml doc
+            {name: 'Name', mapping: '@ac-NAME'},
+			{name: 'PlanPriority', mapping: '@ac-PLAN_PRIORITY'},
+			{name: 'AssignedTo', mapping: '@ac-OWNER_NAME'}
+            
+        ]
+    });
+
+    // create the Data Store
+    var scenariosPlanStore = Ext.create('Ext.data.Store', {
+        model: 'scenariosPlanModel',
+        autoLoad: true,
+        proxy: {
+            // load using HTTP
+            type: 'ajax',
+            url: '/Data/PlansSampleData-2.xml',
+            // the return will be XML, so lets set up a reader
+            reader: {
+                type: 'xml',
+                // records will have an "Item" tag
+				
+                record: 'Description',
+                idProperty: '@ac-ID'
+            }
+        }
+    });
+
+    // create the grid
+    var planScenariosGrid = Ext.create('Ext.grid.Panel', 
+		
+		{	
+        xtype: 'gridpanel',
+		store: scenariosPlanStore,
+        columns: [
+            {text: "Name", flex: 1, dataIndex: 'Name', sortable: true},
+            {text: "Plan Priority", width: 180, dataIndex: 'PlanPriority', sortable: true},
+            {text: "Assigned to", width: 100, dataIndex: 'AssignedTo', sortable: true}
+        ],
+		tbar: [
+			{
             text: 'Add',
             icon: '\/images\/add-icon.png',
             handler: function () {
@@ -202,5 +309,8 @@ var planScenariosReleaseSubToolbar = {
                 Ext.getCmp('scenariosBtnNavigate').disable();
             }
         }
-    ]
-};
+		]
+       // renderTo:'plans-grid-1',
+        //width: 540,
+        //height: 200
+    });

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ac="http://acceptsoftware/rdf#">
+	<Seq about="urn:prodElement:35755:plans">
+		<li>
+<Description about="urn:id:21243" ac-ID="21243" ac-sID="00000000002124300" ac-TYPE="SCENARIO" ac-icon="/planner7.3.11/skin/images/entities/Scenario.png" ac-TYPE_ID="523" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Scenario_menu.png" ac-OWNER_NAME="Kevin Klett" ac-NAME="Archive General &gt; PLM Release Candidates (internal) &gt; S-C6.3.0 Planning Workspace" ac-sPLAN_PRIORITY="008000000000021243" ac-PLAN_PRIORITY="Must"/>
+<Description about="urn:id:53890" ac-ID="53890" ac-sID="00000000005389000" ac-TYPE="SCENARIO" ac-icon="/planner7.3.11/skin/images/entities/Scenario.png" ac-TYPE_ID="523" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Scenario_menu.png" ac-OWNER_NAME="Don Dinelli" ac-NAME="Net-Net OS-C Releases - 3000/4000/6000 &amp; SW Series &gt; DSC &gt; D-Cx1.0.0 (DSC) &gt; Copied Scenario &gt; Copy of D-Cx1.0.0F1" ac-sPLAN_PRIORITY="008000000000053890" ac-PLAN_PRIORITY="Must"/>
+<Description about="urn:id:53909" ac-ID="53909" ac-sID="00000000005390900" ac-TYPE="SCENARIO" ac-icon="/planner7.3.11/skin/images/entities/Scenario.png" ac-TYPE_ID="523" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Scenario_menu.png" ac-OWNER_NAME="Don Dinelli" ac-NAME="Net-Net OS-C Releases - 3000/4000/6000 &amp; SW Series &gt; DSC &gt; D-Cx1.0.0 (DSC) &gt; Copied Scenario &gt; Copy of Copy of D-Cx1.0.0F1" ac-sPLAN_PRIORITY="008000000000053909" ac-PLAN_PRIORITY="Must"/>
+<Description about="urn:id:45827" ac-ID="45827" ac-sID="00000000004582700" ac-TYPE="SCENARIO" ac-icon="/planner7.3.11/skin/images/entities/Scenario.png" ac-TYPE_ID="523" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Scenario_menu.png" ac-OWNER_NAME="Albert Lew (disabled)" ac-NAME="Strategic programs requirements (scenarios) &gt; Policy Director (PD)" ac-sPLAN_PRIORITY="008000000000045827" ac-PLAN_PRIORITY="Must"/>
+        </li>
+    </Seq>
+</RDF>
