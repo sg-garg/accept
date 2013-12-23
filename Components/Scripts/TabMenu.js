@@ -121,7 +121,7 @@
                     html: 'Center',
                     title: 'Additional Release Containing this Requirement',
                     flex: 1,
-                    dockedItems: [planAdditionalReleaseSubToolbar]
+                    dockedItems: [planAdditionalReleaseGrid]
                 },
                 {
                     region: 'south',
@@ -129,7 +129,7 @@
                     title: 'Scenarios containing this Requirement',
                     split: true,
                     collapsible: true,
-                    dockedItems: [planScenariosReleaseSubToolbar]
+                    dockedItems: [planScenariosGrid]
                 }
             ]
         },
