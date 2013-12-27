@@ -118,7 +118,6 @@
                 },
                 {
                     region: 'center',
-                    html: 'Center',
                     title: 'Additional Release Containing this Requirement',
                     flex: 1,
                     dockedItems: [planAdditionalReleaseGrid]

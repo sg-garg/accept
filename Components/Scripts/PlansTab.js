@@ -173,7 +173,7 @@ function addAdditionalPlan(){
 							planAdditionalReleaseGrid.getStore().insert(0, rec);
                             this.up('form').getForm().reset();
                             this.up('window').hide();
-                            Ext.MessageBox.alert('Thank you!', 'Your Message has been sent.');
+                            Ext.MessageBox.alert('Success', 'Record added successfully');
                         }else{
 							Ext.MessageBox.alert('Error', 'Please Select Release');
 						}
