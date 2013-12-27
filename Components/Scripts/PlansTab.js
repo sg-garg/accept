@@ -279,28 +279,7 @@ function addAdditionalPlan(){
             },
             id: 'btnRefresh'
         }
-        , '|',
-        {
-            text: 'Enable',
-            handler: function () {
-                Ext.getCmp('btnRemove').enable();
-                Ext.getCmp('btnRemoveFromAll').enable();
-                Ext.getCmp('btnMakePrimaryRelease').enable();
-                Ext.getCmp('btnView').enable();
-                Ext.getCmp('btnNavigate').enable();
-            }
-        },
-        {
-            text: 'Disable',
-            handler: function () {
-                Ext.getCmp('btnRemove').disable();
-                Ext.getCmp('btnRemoveFromAll').disable();
-                Ext.getCmp('btnMakePrimaryRelease').disable();
-                Ext.getCmp('btnView').disable();
-                Ext.getCmp('btnNavigate').disable();
-            }
-        }
-		],
+        ],
 		listeners: {
 			click: {
 				element: 'el', //bind to the underlying el property on the panel
@@ -410,24 +389,6 @@ function addAdditionalPlan(){
             },
             id: 'scenariosBtnRefresh'
         }
-        , '|',
-        {
-            text: 'Enable',
-            handler: function () {
-                Ext.getCmp('scenariosBtnRemove').enable();
-                Ext.getCmp('scenariosBtnRemoveFromAll').enable();
-               Ext.getCmp('scenariosBtnView').enable();
-                Ext.getCmp('scenariosBtnNavigate').enable();
-            }
-        },
-        {
-            text: 'Disable',
-            handler: function () {
-                Ext.getCmp('scenariosBtnRemove').disable();
-                Ext.getCmp('scenariosBtnRemoveFromAll').disable();
-                Ext.getCmp('scenariosBtnView').disable();
-                Ext.getCmp('scenariosBtnNavigate').disable();
-            }
-        }
+        
 		]
     });
