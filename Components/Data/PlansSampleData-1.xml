@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ac="http://acceptsoftware/rdf#">
+	<Seq about="urn:prodElement:18849:additionals">
+		<li>
+
+<Description about="urn:id:6842" ac-ID="6842" ac-sID="00000000000684200" ac-TYPE="RELEASE" ac-icon="/planner7.3.11/skin/images/entities/Release.png" ac-TYPE_ID="522" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Release.png" ac-OWNER_NAME="Patricia Streilein - inactive" ac-NAME="Net-Net OS-C Releases 1" ac-sPLAN_PRIORITY="008000000000006842" ac-PLAN_PRIORITY="Must" ac-PLAN_LIFECYCLE="Implemented (Implemented)" ac-PLAN_LIFECYCLE_P="FEATURE012000000000006842" ac-sPLAN_LIFECYCLE="FEATURE012000000000006842"/>
+
+<Description about="urn:id:6842" ac-ID="6843" ac-sID="00000000000684200" ac-TYPE="RELEASE" ac-icon="/planner7.3.11/skin/images/entities/Release.png" ac-TYPE_ID="522" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Release.png" ac-OWNER_NAME="Patricia Streilein - inactive" ac-NAME="AA-Net OS-C Garg 2" ac-sPLAN_PRIORITY="008000000000006842" ac-PLAN_PRIORITY="Must" ac-PLAN_LIFECYCLE="Implemented (Implemented)" ac-PLAN_LIFECYCLE_P="FEATURE012000000000006842" ac-sPLAN_LIFECYCLE="FEATURE012000000000006842"/>
+<Description about="urn:id:6842" ac-ID="6844" ac-sID="00000000000684200" ac-TYPE="RELEASE" ac-icon="/planner7.3.11/skin/images/entities/Release.png" ac-TYPE_ID="522" ac-MENU_ICON_URL="/planner7.3.11/skin/images/entities/Release.png" ac-OWNER_NAME="Patricia Streilein - inactive" ac-NAME="BB-Net OS-C Releases 3" ac-sPLAN_PRIORITY="008000000000006842" ac-PLAN_PRIORITY="Must" ac-PLAN_LIFECYCLE="Implemented (Implemented)" ac-PLAN_LIFECYCLE_P="FEATURE012000000000006842" ac-sPLAN_LIFECYCLE="FEATURE012000000000006842"/>
+
+        </li>
+    </Seq>
+</RDF>
