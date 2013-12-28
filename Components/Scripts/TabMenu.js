@@ -17,7 +17,8 @@
                 {
                     region: 'center',
                     layout:'fit',
-                    xtype:'panel',
+                    xtype: 'panel',
+                    cls:'removeBorder',
                     flex: 4,
                     items: [generalDescriptionFormPanel]
                 },

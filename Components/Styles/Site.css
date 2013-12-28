@@ -639,3 +639,45 @@
     background-color:white !important;
 }
 /* End - This is for changing collapsible css for whole application*/
+/*.x-css-shadow {
+    position: static !important;
+}*/
+.removeBorder .x-panel-body-default 
+{
+    border-width:0px;
+}
+
+.myMenuBaseCSS
+{
+    border: 1px solid #999999;
+    border-top:0px;
+    background:Green !important;
+    
+}
+.myMenuComponentCSS 
+{
+}
+.myMenuBaseCSS .x-box-item
+{
+    background:Green !important;
+    border: #999999;
+    
+}
+.myMenuBaseCSS .x-box-item-hover
+{
+    background:Red !important;
+    border: #999999;
+    
+}
+.myMenuBaseCSS .x-box-item-active
+{
+    background:Yellow !important;
+    border: #999999;
+    
+}
+.myMenuBaseCSS.x-menu-item-active
+{
+    background:Yellow !important;
+    border: #999999;
+    
+}
