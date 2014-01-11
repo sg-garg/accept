@@ -6,7 +6,7 @@ var topMenuSelectedItemDisplay = {
     xtype: 'label',
     text: 'Home',
     id: 'topMenuSelectedItemDisplayID',
-    height: 35,
+    height: 34,
     cls: 'topMenuSelectedItemDisplayCSS'
 };
 
@@ -14,14 +14,14 @@ var logoBar = {
     xtype: 'panel',
     //bodyCls: 'header-top',
     dock: 'top',
-    height: 74,
-    html: '<div class="header-top clearfix"><div class="header-top-l"> <a href="home.html"><img src="images/amiran-logo.png" alt="" /></a></div><div class="header-top-r"> <a href="home.html"><img src="images/accept-logo.png" alt="" /></a><ul><li>Logged in as <a href="#">Accept Support</a></li><li><span>|</span></li><li><a href="#">Logout</a></li></ul></div></div>'
+    height: 70,
+    html: '<div class="header-top clearfix"><div class="header-top-l"> <a href="home.html"><img src="images/amiran-logo.png" alt="" /></a></div><div class="header-top-r"> <a href="home.html"><img src="images/accept-logo.png" alt="" /></a><ul><li>Logged in as <a class="logoTextLinkCSS" href="#">Accept Support</a></li><li><span>|</span></li><li><a class="logoTextLinkCSS" href="#">Logout</a></li></ul></div></div>'
 };
 
 
 var BreadCrumBar = {
     xtype: 'panel',
-    height: 57,
+    height: 52,
     layout: {
         type: 'vbox',
         align: 'stretch',
@@ -32,7 +32,7 @@ var BreadCrumBar = {
          {
              xtype: 'tbtext',
              id: 'breadCrumTextID',
-             style: 'margin-left:5px;text-transform:capitalize;',
+             style: 'text-transform:capitalize;',
              text: '<a class="breadCrumTextLinkCSS" href="#">Home</a>'
          }
     ]

@@ -141,19 +141,32 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     font-weight: bold;
     color:#333333;
     float: left;
-    padding:3px 0 5px 5Px;
+    padding-left:3px;
+    padding-top:5px;
     text-transform:capitalize;
 }
 
 .breadCrumTextLinkCSS
 {
+    padding-left:3px;
     text-decoration: none;
     color:#5fbbe9; 
 }
 
 .breadCrumTextLinkCSS:hover
 {
-    border-bottom: 1px solid #5fbbe9;
+    text-decoration:underline;
+}
+
+.logoTextLinkCSS
+{
+    text-decoration: none;
+    color:#006699; 
+}
+
+.logoTextLinkCSS:hover
+{
+    text-decoration:underline;
 }
 
 .header-top-l {
@@ -163,7 +176,7 @@ padding: 6px 0px 0px 0px;
 
 .header-top-r {
 float: right;
-width: 189px;
+width: 200px;
 }
 
 .clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
@@ -178,8 +191,8 @@ width: 189px;
     background: url(/images/header-top-bg.png) repeat-x left top;
     padding: 8px 8px 6px 9px;
 }
-.header-top-r a{ float:right; height:38px; }
+.header-top-r a{ float:right; height:35px; }
 .header-top-r a:hover{ text-decoration:underline;color: #006699;}
 .header-top-r ul{ float: right;}
-.header-top-r li{ float: left;font-size:11px; padding:4px 0px 0px 2px; padding:6px 0px 0px 2px\9; color:#333333;}
+.header-top-r li{ float: left;font-size:11px; padding:4px 0px 0px 2px; color:#333333;}
 .header-top-r li a{ float:none;}
