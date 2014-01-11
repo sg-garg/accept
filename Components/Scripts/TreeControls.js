@@ -327,6 +327,7 @@ var treeFilterToolbar = {
                     },
                     itemclick: function (view, node, item, index, e, eOpts) {
                         Ext.getCmp('tabsHeaderInfoDisplayID').setText(node.data.nodeType + ' - ' + node.data.name);
+                        Ext.getCmp('breadCrumTextID').setText('<a class="breadCrumTextLinkCSS" href="#">Home</a> > ' + Ext.getCmp('tabsHeaderInfoDisplayID').text);
                     }
                 }
             });

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Main Top Menu</title>
+    <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Site3.css" rel="stylesheet" type="text/css" />
+    <script src="extjs/ext-all.js" type="text/javascript"></script>
+    <script src="Scripts/MainTopMenu.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        Ext.require(['*']);
+
+        Ext.onReady(function () {
+            Ext.QuickTips.init();
+
+                new Ext.Panel({
+                    renderTo: Ext.getBody(),
+                    // dockedItems: [mainTopMenuBar],
+                    layout: {
+                        type: 'vbox',
+                        align: 'stretch',
+                        pack: 'start'
+                    },
+                    height:1000,
+                    items: [
+                            logoBar,
+                            mainTopMenuBar,
+                            BreadCrumBar
+                        ]
+                });
+
+//            Ext.create('Ext.Viewport', {
+
+//                layout: {
+//                    type: 'border'
+//                },
+//                items: [{
+//                    region: 'north',
+//                    layout: {
+//                        type: 'vbox',
+//                        align: 'stretch',
+//                        pack: 'start'
+//                    },
+//                    items: [
+//                                mainTopMenuBar
+//                           ]
+
+//                }]
+//            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

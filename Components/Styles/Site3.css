@@ -1,0 +1,185 @@
+﻿.top_nav_T{width:99.8%;
+background: #666666; /* Old browsers */
+background: -moz-linear-gradient(top,  #666666 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #666666 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #666666 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #666666 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #666666 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-moz-border-radius:3px 3px 0px 0px;-webkit-border-radius:3px 3px 0px 0px;-khtml-border-radius:3px 3px 0px 0px;-o-border-radius:3px 3px 0px 0px;-ms-border-radius:3px 3px 0px 0px;-icab-border-radius:3px 3px 0px 0px; border:1px solid #333333; border-bottom:0;}
+
+.top_nav_T_item {
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;   
+}
+.top_nav_T_item .x-btn-inner { color:white; }
+.top_nav_T_item:hover {background-color:#666666 !important;}
+.top_nav_T_item:hover .x-btn-inner { color:white; }
+
+
+.homeTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.homeTopMenuButtonCSS .x-btn-inner { color:white; }
+.homeTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.homeTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/home-icon-hover.png) !important; }
+.homeTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.dashboardTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.dashboardTopMenuButtonCSS .x-btn-inner { color:white; }
+.dashboardTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.dashboardTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/dashboard-icon-hover.png) !important; }
+.dashboardTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.prTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.prTopMenuButtonCSS .x-btn-inner { color:white; }
+.prTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.prTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/pr-icon-hover.png) !important; }
+.prTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.pcTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.pcTopMenuButtonCSS .x-btn-inner { color:white; }
+.pcTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.pcTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/product-content-icon-hover.png) !important; }
+.pcTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.executionTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.executionTopMenuButtonCSS .x-btn-inner { color:white; }
+.executionTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.executionTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/execution-icon-hover.png) !important; }
+.executionTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.reportingTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.reportingTopMenuButtonCSS .x-btn-inner { color:white; }
+.reportingTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.reportingTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/report-icon-hover.png) !important; }
+.reportingTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.adminTopMenuButtonCSS
+{
+    height:38px; color:white; padding:12px 14px 0px 14px; cursor:pointer ; 
+    border-radius:0px !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:none !important; 
+    border-left: 1px solid #565656 !important;
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+.adminTopMenuButtonCSS .x-btn-inner { color:white; }
+.adminTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
+.adminTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/admin-icon-hover.png) !important; }
+.adminTopMenuButtonCSS.x-btn-over .x-btn-inner { color:white; }
+
+.topMenuSelectedItemDisplayCSS{
+    font-size: 24px !important;
+    font-weight: bold;
+    color:#333333;
+    float: left;
+    padding:3px 0 5px 5Px;
+    text-transform:capitalize;
+}
+
+.breadCrumTextLinkCSS
+{
+    text-decoration: none;
+    color:#5fbbe9; 
+}
+
+.breadCrumTextLinkCSS:hover
+{
+    border-bottom: 1px solid #5fbbe9;
+}
+
+.header-top-l {
+float: left;
+padding: 6px 0px 0px 0px;
+}
+
+.header-top-r {
+float: right;
+width: 189px;
+}
+
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.header-top {
+    border: 1px solid #999999;
+    border-bottom: 1px solid #000;
+    border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    position: relative;
+    behavior: url(PIE.htc);
+    background: url(/images/header-top-bg.png) repeat-x left top;
+    padding: 8px 8px 6px 9px;
+}
+.header-top-r a{ float:right; height:38px; }
+.header-top-r a:hover{ text-decoration:underline;color: #006699;}
+.header-top-r ul{ float: right;}
+.header-top-r li{ float: left;font-size:11px; padding:4px 0px 0px 2px; padding:6px 0px 0px 2px\9; color:#333333;}
+.header-top-r li a{ float:none;}

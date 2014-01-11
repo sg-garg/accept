@@ -2,9 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Requirements</title>
-     <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
-     <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
-     <link href="Styles/Site2.css" rel="stylesheet" type="text/css" />
+    <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Site2.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Site3.css" rel="stylesheet" type="text/css" />
     <script src="extjs/ext-all.js" type="text/javascript"></script>
     <script src="Scripts/filteringTreeView/filteringTreeStore.js" type="text/javascript"></script>
     <script src="Scripts/customTabPanel.js" type="text/javascript"></script>
@@ -21,7 +22,7 @@
     <script src="Scripts/RequirementDependenciesTab.js" type="text/javascript"></script>
     <script src="Scripts/IssuesTab.js" type="text/javascript"></script>
     <script src="Scripts/TabMenu.js" type="text/javascript"></script>
-      
+    <script src="Scripts/MainTopMenu.js" type="text/javascript"></script>
    
     <script type="text/javascript">
         Ext.require(['*']);
@@ -31,23 +32,21 @@
                 layout: {
                     type: 'border'
                 },
+                
                 items: [{
                     region: 'north',
-                    height: 66,
+                    height: 236,
                     layout: {
                         type: 'vbox',
                         align: 'stretch',
                         pack: 'start'
                     },
                     items: [
-                        {
-                            flex: 1,
-                            dockedItems: [topMenuBar]
-                        },
-                        {
-                            flex: 1,
-                            dockedItems: [topSubToolBar]
-                        }
+                        logoBar,
+                        mainTopMenuBar,
+                        BreadCrumBar,
+                        topMenuBar,
+                        topSubToolBar
                     ]
                 }, {
                     region: 'west',

@@ -1,7 +1,7 @@
 ﻿var tabsBar = {
     xtype: 'customtabpanel1',
     flex: 1,
-    activeTab: 0,
+    activeTab: 3,
     tabitems: [
         {
             title: 'General',
@@ -119,16 +119,15 @@
                 },
                 {
                     region: 'center',
-                    title: 'Additional Release Containing this Requirement',
                     flex: 1,
                     dockedItems: [planAdditionalReleaseGrid]
                 },
                 {
                     region: 'south',
                     flex: 1,
-                    title: 'Scenarios containing this Requirement',
                     split: true,
                     collapsible: true,
+                    hideCollapseTool: true,
                     dockedItems: [planScenariosGrid]
                 }
             ]
