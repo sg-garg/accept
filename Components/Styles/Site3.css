@@ -19,6 +19,7 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     border-right: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;   
 }
+.top_nav_T_item .x-btn-arrow { background-image: url('/images/dd-arrow.png'); display: block; }
 .top_nav_T_item .x-btn-inner { color:white; }
 .top_nav_T_item:hover {background-color:#666666 !important;}
 .top_nav_T_item:hover .x-btn-inner { color:white; }
@@ -67,6 +68,7 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     border-right: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
 }
+.prTopMenuButtonCSS .x-btn-arrow { background-image: url('/images/dd-arrow.png'); display: block; }
 .prTopMenuButtonCSS .x-btn-inner { color:white; }
 .prTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
 .prTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/pr-icon-hover.png) !important; }
@@ -83,6 +85,7 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     border-right: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
 }
+.pcTopMenuButtonCSS .x-btn-arrow { background-image: url('/images/dd-arrow.png'); display: block; }
 .pcTopMenuButtonCSS .x-btn-inner { color:white; }
 .pcTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
 .pcTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/product-content-icon-hover.png) !important; }
@@ -99,6 +102,7 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     border-right: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
 }
+.executionTopMenuButtonCSS .x-btn-arrow { background-image: url('/images/dd-arrow.png'); display: block; }
 .executionTopMenuButtonCSS .x-btn-inner { color:white; }
 .executionTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
 .executionTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/execution-icon-hover.png) !important; }
@@ -115,6 +119,7 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     border-right: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
 }
+.reportingTopMenuButtonCSS .x-btn-arrow { background-image: url('/images/dd-arrow.png'); display: block; }
 .reportingTopMenuButtonCSS .x-btn-inner { color:white; }
 .reportingTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
 .reportingTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/report-icon-hover.png) !important; }
@@ -131,6 +136,7 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     border-right: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
 }
+.adminTopMenuButtonCSS .x-btn-arrow { background-image: url('/images/dd-arrow.png'); display: block; }
 .adminTopMenuButtonCSS .x-btn-inner { color:white; }
 .adminTopMenuButtonCSS.x-btn-over  { background:#666666 !important; }
 .adminTopMenuButtonCSS.x-btn-over .x-btn-icon { background-image: url(/images/admin-icon-hover.png) !important; }
@@ -143,10 +149,10 @@ height:40px; float:left;behavior: url(PIE.htc);border-radius:3px 3px 0px 0px;-mo
     float: left;
     padding-left:3px;
     padding-top:5px;
-    text-transform:capitalize;
+    text-transform:capitalize
 }
 
-.breadCrumTextLinkCSS
+.breadCrumTextLinkCSS;
 {
     padding-left:3px;
     text-decoration: none;
