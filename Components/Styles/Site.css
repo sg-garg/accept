@@ -639,9 +639,9 @@
     background-color:white !important;
 }
 /* End - This is for changing collapsible css for whole application*/
-/*.x-css-shadow {
+.x-css-shadow {
     position: static !important;
-}*/
+}
 .removeBorder .x-panel-body-default 
 {
     border-width:0px;
