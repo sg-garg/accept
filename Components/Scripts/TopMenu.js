@@ -14,6 +14,15 @@
                             cls: "sub_top_nav_T_item",
                             handler: function () {
                                 console.log('New:  icon clicked');
+                            },
+                            menu: rms_New_Menu,
+                            listeners: {
+                                mouseover: function () {
+                                    this.showMenu();
+                                },
+                                click: function () {
+                                    this.showMenu();
+                                }
                             }
                         },
                         {
@@ -30,6 +39,15 @@
                             cls: "sub_top_nav_T_item",
                             handler: function () {
                                 console.log('Edit:  icon clicked');
+                            },
+                            menu: rms_Edit_Menu,
+                            listeners: {
+                                mouseover: function () {
+                                    this.showMenu();
+                                },
+                                click: function () {
+                                    this.showMenu();
+                                }
                             }
                         },
                         {
@@ -46,6 +64,15 @@
                             cls: "sub_top_nav_T_item",
                             handler: function () {
                                 console.log('Actions:  icon clicked');
+                            },
+                            menu: rms_Actions_Menu,
+                            listeners: {
+                                mouseover: function () {
+                                    this.showMenu();
+                                },
+                                click: function () {
+                                    this.showMenu();
+                                }
                             }
                         },
                         {
@@ -66,245 +93,13 @@
                                 console.log('Tools:  icon clicked');
                             },
                             id: 'btnTools',
-                            menu: {
-                                plain: true,
-                                items: [
-                                {
-                                    text: 'History',
-                                    icon: '\/images\/history-dd-icon.png',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                },
-                                {
-                                    text: 'Find',
-                                    icon: '\/images\/find-icon.png',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                },
-                                {
-                                    text: 'Export Data',
-                                    icon: '\/images\/xl-icon.png',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                },
-                                '-',
-                                {
-                                    text: 'Relationships Table',
-                                    icon: '\/images\/relations_icon.png',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                },
-                                '-',
-                                {
-                                    text: 'Add Ins',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                },
-                                {
-                                    text: 'Report Builder',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                },
-                                {
-                                    text: 'Profile',
-                                    handler: function () {
-                                        console.log('Actions:  icon clicked');
-                                    },
-                                    menu: {
-                                        plain: true,
-                                        items: [
-                                        {
-                                            text: 'Sub Navigation 1',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 1:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 2',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 2:  icon clicked');
-                                            }
-                                        },
-                                        {
-                                            text: 'Sub Navigation 3',
-                                            icon: '\/images\/history-dd-icon.png',
-                                            handler: function () {
-                                                console.log('Sub Navigation 3:  icon clicked');
-                                            }
-                                        }
-                                    ]
-                                    }
-                                }
-                            ]
-                            },
+                            menu: rms_Tools_Menu,
                             listeners: {
                                 mouseover: function () {
                                     this.showMenu();
-                                    console.log('mouse over')
+                                },
+                                click: function () {
+                                    this.showMenu();
                                 }
                             }
                         },
@@ -322,6 +117,15 @@
                             cls: "sub_top_nav_T_item",
                             handler: function () {
                                 console.log('Table Views:  icon clicked');
+                            },
+                            menu: rms_TableViews_Menu,
+                            listeners: {
+                                mouseover: function () {
+                                    this.showMenu();
+                                },
+                                click: function () {
+                                    this.showMenu();
+                                }
                             }
                         },
                         {
@@ -338,6 +142,15 @@
                             cls: "sub_top_nav_T_item",
                             handler: function () {
                                 console.log('Module:  icon clicked');
+                            },
+                            menu: rms_Module_Menu,
+                            listeners: {
+                                mouseover: function () {
+                                    this.showMenu();
+                                },
+                                click: function () {
+                                    this.showMenu();
+                                }
                             }
                         },
                         {
@@ -353,8 +166,16 @@
                             text: 'Help',
                             cls: "sub_top_nav_T_item",
                             handler: function () {
-                                alert("hello");
                                 console.log('Help:  icon clicked');
+                            },
+                            menu: rms_Help_Menu,
+                            listeners: {
+                                mouseover: function () {
+                                    this.showMenu();
+                                },
+                                click: function () {
+                                    this.showMenu();
+                                }
                             }
                         },
                         {
